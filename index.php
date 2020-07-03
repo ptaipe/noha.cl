@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=no"> 
 		<meta name="google-signin-client_id" content="554781700782-0e42vcdoof308bd61h8tnmioiblhsvko.apps.googleusercontent.com">
 
-		<title>NoHa</title>
+		<title>n o h a</title>
 	
 		<link rel="shortcut icon" href="imagenes/logo.ico"> 
 		<link rel="stylesheet" type="text/css" href="css/tags.css"/>
