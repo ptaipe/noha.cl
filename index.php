@@ -17,23 +17,18 @@
 		<link rel="stylesheet" type="text/css" href="css/formRegisUser.css"/>
 		<link rel="stylesheet" type="text/css" href="css/formularios.css"/>
 
-
 		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1/dist/css/bootstrap.min.css">
 
 		<script src="js/validarRut.js?v=1"></script>
 		<script src="js/bodySlider.js?v=1"></script>
 		<script type="text/javascript">
-			$('.custom-file-input').on('change',function(){
-			  var fileName = document.getElementById("exampleInputFile").files[0].name;
-			  $(this).next('.form-control-file').addClass("selected").html(fileName);
-			})
-		</script>
 
+		</script>
 
 	</head>
 	<body background="imagenes/fondo6.jpg">
 		<div id="precarga">
-			<!-- precarga de backgrounds -->
+			<!--precarga de backgrounds-->
 		</div>
 
 		<!-- Tramites -->
