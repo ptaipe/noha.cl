@@ -1,0 +1,276 @@
+html, body {
+	height:100%;
+}
+body {	
+	background-repeat: no-repeat;
+	background-size: 100% 91%;
+	background-position: center;
+	background-attachment: fixed;
+    text-transform: uppercase;
+
+	font-family: 'Roboto';
+
+	-webkit-transition:all 0.7s ease-in-out;
+	-moz-transition:all 0.7s ease-in-out;
+	-o-transition:all 0.7s ease-in-out;
+	-ms-transition:all 0.7s ease-in-out;        
+	transition:all 0.7s ease-in-out;
+}
+/*Boton Servicios*/
+
+#conf1,#conf2,#conf3,#conf4{
+	width: 10.1%;	
+}
+#conf1,#conf2,#conf3,#conf4{	
+    border-radius: 9px;
+    margin-left: 0%;
+    margin-top: 3px;
+    float: left;
+}
+#conf2 p{
+	color: rgba(255, 255, 255, 0);    
+    margin-left: 115px;
+}
+#tablaMenu{
+	margin: 0 auto;
+	margin-top: -3%;
+}
+
+/*Botones cerrar,volver,guardar*/
+
+#cerrarMenu{
+	position: absolute;
+    float: left;
+    left: 94%;
+    top: 3%;
+    border-radius: 100%;
+    height: 7%;
+    background: rgb(52, 58, 64);
+    box-shadow: 2px 2px 2px 1px rgb(53, 45, 45);
+}
+#cerrar{
+	position: absolute;
+    float: left;
+    left: 97%;
+    top: 3%;
+    border-radius: 100%;
+    height: 9%;
+    background: rgb(52, 58, 64);
+    box-shadow: 2px 2px 2px 1px rgb(53, 45, 45);
+}
+#volverrt{
+	position: absolute;
+    float: left;
+    left: 1%;
+    top: 104%;
+    border-radius: 100%;
+    height: 10%;
+    background: rgb(52, 58, 64);
+    box-shadow: 2px 2px 2px 1px rgb(53, 45, 45);
+}
+#guardarrt{
+    background: white;
+    color: black;
+    font-weight: 770;
+    border-color: rgb(119, 122, 125);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.86);
+}
+
+#guardarrt:hover{	
+	transition: 0.5s;
+	width: 15%;    
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    font-weight: 770;
+    border-color: rgb(119, 122, 125);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.86);
+}
+
+
+/*Estilo del menu*/
+#header{
+	position: absolute;
+	z-index: 2000;
+	width: 235px;
+	top: 50px;
+	text-align: justify;
+}
+#header h1{
+	font-size: 23.4px;
+	font-weight: 770;
+	text-transform: uppercase;	
+	padding: 10px;
+	padding-left: 0px;		
+	text-align: center;
+	line-height: 35px;	
+	
+	color: rgba(255, 170, 0);
+    background: rgb(245, 245, 245);
+    box-shadow: 4px 4px 0px 0px rgb(255, 170, 0);
+    text-shadow: 1px 1px 1px rgba(0,0, 0, 0.9);
+}
+#navigation {
+	margin-top: 20px;
+	width: 235px;
+	display:block;
+	list-style:none;
+	z-index:3;
+}
+#navigation a{
+	
+    font-weight: 580;
+    display: block;
+    line-height: 50px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 170, 0);
+    background: rgb(245, 245, 245);
+    box-shadow: 4px 4px 0px 0px rgb(255, 170, 0);
+    text-shadow: 1px 1px 1px rgba(0,0, 0, 0.9); 
+    text-decoration: none;
+}
+#navigation a:hover{
+	background: rgba(255, 170, 0);
+	box-shadow: 8px 5px 0px 0px rgb(245, 245, 245, 0.8);
+	color: rgba(245, 245, 245);
+	transition: 0.5s;
+}
+
+#ico{
+	width: 37px;
+    height: 46px;
+    margin-top: -67px;
+    position: absolute;
+    margin-left: 196px;
+}
+#ico2{
+	width: 40px;
+	height: 42px;
+	margin-top: -69px;
+	position: absolute;
+	margin-left: 177px;
+}
+#ico3{
+	width: 34px;
+    height: 25px;
+    margin-top: -57px;
+    position: absolute;
+    margin-left: 194px;
+}
+/*fin del estilo del menu*/
+
+.content{
+	right: 28px;
+    left: 21px;
+    top: -5px;
+    position: absolute;
+    padding-bottom: 0px;
+
+}
+.content h2{
+	font-size: 44px;
+    color: rgba(255, 170, 0);
+    text-shadow: 2px 2px 1px rgba(0,0,0);
+}
+
+.panel{
+	min-width: 81%;
+    height: 84.6%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: -150%;
+    position: absolute;
+    z-index: 2;   
+    transition: all .9s ease-in-out;
+}
+.panel:target{
+	margin-top: 2.2%;
+    margin-left: 18%;
+    width: 77%;
+    background: rgb(255, 255, 255, 0.65);
+    box-shadow: 1px 1px 1px 2px rgba(255, 170, 0, 1);
+    padding-top: 4.5%;
+}
+
+#home:target ~ #header #navigation #serv,
+#portfolio:target ~ #header #navigation #tram,
+#about:target ~ #header #navigation #shop,
+#contact:target ~ #header #navigation #new,
+#contact:target ~ #header #navigation #contacto,
+{
+	background: #000;
+	color: #fff;
+}
+#formSocio{
+	margin:auto 0;
+	text-align: center;
+	background: rgba(210,126,52,0.7);
+	width: 100%;
+	-webkit-border-radius: 27px;
+	-webkit-border-top-right-radius: 27px;
+	-moz-border-radius: 27px;
+	-moz-border-radius-topright: 27px;
+	border-radius: 27px;
+	border-top-right-radius: 27px;
+}
+#tablaMenuTramites{
+	margin:auto 0;
+	text-align: center;		
+}
+#des{	
+	margin-left:185px;
+	opacity: 0.75;
+}
+/**/
+#menu2,#menu4{
+	width: 368%;   
+    margin-left: 597%;
+    margin-top: 3%;
+    margin-bottom: 3px;
+    border-radius: 15px;	
+}
+#menu1,#menu3{
+	width: 368%; 
+    margin-left: 20%;
+    margin-top: 3%;
+    margin-bottom: 3px;	
+    border-radius: 15px;
+}
+
+#menu2:hover,#menu4:hover{
+    width: 368%;
+    margin-left: 597%;
+    margin-top: 3%;
+    margin-bottom: 3px;
+    background-color: white;
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.86);
+}
+
+#menu1:hover,#menu3:hover{
+    width: 368%; 
+    margin-left: 20%;
+    margin-top: 3%;
+    margin-bottom: 3px; 
+    background-color: white;
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.86);
+}
+
+
+#btnRegresar{
+	width: 210px;
+	height: 75px;
+}
+
+#footer{	
+    position: absolute;
+    bottom: 0px;    
+    font-size: 12px;   
+    width: 100%;
+    margin-left: 0%;
+    background: rgba(244, 246, 247);    
+    vertical-align: center;   
+    padding-left: 0px;
+}
