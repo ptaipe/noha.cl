@@ -348,7 +348,7 @@
 						<img id="im2" src="Productos/canasta1.jpeg">
 					</div>
 					<div id="galery">
-						<button class="btn btn-warning"><strong>$00.000</strong></button>
+						<button class="btn btn-warning"><strong>$11.990</strong></button>
 					</div>
 				</div>
 
@@ -360,7 +360,7 @@
 						<img id="im3" src="Productos/canasta2.jpeg">
 					</div>
 					<div id="galery">
-						<button class="btn btn-warning"><strong>$00.000</strong></button>
+						<button class="btn btn-warning"><strong>$18.990</strong></button>
 					</div>
 				</div>
 
@@ -372,7 +372,7 @@
 						<img id="im4" src="Productos/canasta3.jpeg">
 					</div>
 					<div id="galery">
-						<button class="btn btn-warning"><strong>$00.000</strong></button>
+						<button class="btn btn-warning"><strong>$12.500</strong></button>
 					</div>
 				</div>
 
@@ -384,7 +384,7 @@
 						<img id="im6" src="Productos/italiano.jpeg">
 					</div>
 					<div id="galery">
-						<button class="btn btn-warning"><strong>$00.000</strong></button>
+						<button class="btn btn-warning"><strong>$7.500</strong></button>
 					</div>
 				</div>
 
