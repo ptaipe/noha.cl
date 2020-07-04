@@ -8,7 +8,7 @@
 		<meta name="google-signin-client_id" content="554781700782-0e42vcdoof308bd61h8tnmioiblhsvko.apps.googleusercontent.com">
 
 		<title>NoHa</title>
-    <!-- prueba GIT-->
+    
 		<link rel="shortcut icon" href="imagenes/logo.ico">
 		<link rel="stylesheet" type="text/css" href="css/tags.css"/>
 		<link rel="stylesheet" type="text/css" href="css/popup.css"/>
@@ -16,14 +16,12 @@
 		<link rel="stylesheet" type="text/css" href="css/styleMobile.css"/>
 		<link rel="stylesheet" type="text/css" href="css/formRegisUser.css"/>
 		<link rel="stylesheet" type="text/css" href="css/formularios.css"/>
+		<link rel="stylesheet" type="text/css" href="css/productos.css"/>
 
 		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1/dist/css/bootstrap.min.css">
 
 		<script src="js/validarRut.js?v=1"></script>
 		<script src="js/bodySlider.js?v=1"></script>
-		<script type="text/javascript">
-
-		</script>
 
 	</head>
 	<body background="imagenes/fondo6.jpg">
@@ -339,11 +337,58 @@
 		</div>
 
 		<div id="canastas" class="panel">
-			<div class="content">
-				<h2>stock canastas</h2>
+			<div class="content">				
+				<h2>canastas</h2>
+
+				<div class="" id="galeria">
+					<div id="galery">
+						<img id="im" src="Productos/canasta1.png">
+					</div>
+					<div id="galery">
+						<img id="im2" src="Productos/canasta1.jpeg">
+					</div>
+					<div id="galery">
+						<button class="btn btn-warning"><strong>$00.000</strong></button>
+					</div>
+				</div>
+
+				<div class="" id="galeria">
+					<div id="galery">
+						<img id="im" src="Productos/canasta2.png">
+					</div>
+					<div id="galery">
+						<img id="im3" src="Productos/canasta2.jpeg">
+					</div>
+					<div id="galery">
+						<button class="btn btn-warning"><strong>$00.000</strong></button>
+					</div>
+				</div>
+
+				<div class="" id="galeria">
+					<div id="galery">
+						<img id="im" src="Productos/canasta3.png">
+					</div>
+					<div id="galery">
+						<img id="im4" src="Productos/canasta3.jpeg">
+					</div>
+					<div id="galery">
+						<button class="btn btn-warning"><strong>$00.000</strong></button>
+					</div>
+				</div>
+
+				<div class="" id="galeria">
+					<div id="galery">
+						<img id="im5" src="Productos/italiano_opt.jpg">
+					</div>
+					<div id="galery">
+						<img id="im6" src="Productos/italiano.jpeg">
+					</div>
+					<div id="galery">
+						<button class="btn btn-warning"><strong>$00.000</strong></button>
+					</div>
+				</div>
+
 			</div>
-
-
 		</div>
 
 		<div id="comprasVarias" class="panel">
@@ -408,9 +453,8 @@
 			</div>
 		</div>
 
-
-
 		<!--Registro de clientes -->
+
 		<div id="formNewCliente" class="panel">
 			<div class="content">
 				<h2>Registro Nuevo Cliente</h2>
