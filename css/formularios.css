@@ -2,22 +2,19 @@
 	margin-top: 87px;
 	background-color: rgba(245, 245, 245,0.85);
 	width: 60%;
-    margin-left: 217px;
-       
+  margin-left: 217px;
 }
 #tableEnvios1{
 	background-color: rgba(245, 245, 245,0.85);
     margin-top: 20px;
     width: 45%;
     float: left;
-   
 }
 #tableEnvios2{
 	background-color: rgba(245, 245, 245,0.85);
-    margin-top: 20px;    
+    margin-top: 20px;
     width: 45%;
     float: right;
-   
 }
 #tableEnvios3{
 	background-color: rgba(245, 245, 245,0.85);
@@ -25,11 +22,25 @@
     width: 70%;
     margin-left: 177px;
 }
-#tableEnvios1:hover,#tableEnvios2:hover,#tablePedidoRT:hover{    
+#tableEnvios1:hover,#tableEnvios2:hover,#tablePedidoRT:hover{
     box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.86);
 }
 #frmDelivery{
-	
+
     padding-left: 15px;
     padding-right: 15px;
 }
+/*Formulario Registro de clientes*/
+#tablaClientes{
+	width: 50%;
+  margin: 0 auto;
+}
+/*Formulario Registro de clientes*/
+Columnaapellido
+Columnaclave
+ColumnaDireccion
+Columnaemail
+ColumnaidUsuario
+Columnanombre
+Columnarut
+Columnatelefono

@@ -8,7 +8,7 @@
 		<meta name="google-signin-client_id" content="554781700782-0e42vcdoof308bd61h8tnmioiblhsvko.apps.googleusercontent.com">
 
 		<title>NoHa</title>
-    
+
 		<link rel="shortcut icon" href="imagenes/logo.ico">
 		<link rel="stylesheet" type="text/css" href="css/tags.css"/>
 		<link rel="stylesheet" type="text/css" href="css/popup.css"/>
@@ -84,6 +84,40 @@
 			</div>
 		</div>
 		<!-- /Compras -->
+
+		<!--Registro de clientes -->
+		<div id="formNewCliente" class="panel">
+			<div class="content">
+				<h2>Registro Nuevo Cliente</h2>
+				  <form action="">
+				  	<table class="table table-sm table-borderless table-responsive-sm" id="tablaClientes">
+							<tr>
+								<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
+							</tr>
+							<tr>
+								<td><input class="form-control" type="" name="" placeholder="Nombred"></td>
+							</tr>
+							<tr>
+								<td><input class="form-control" type="" name="" placeholder="Apellido"></td>
+							</tr>
+							<tr>
+								<td><input class="form-control" type="" name="" placeholder="Correo electrónico"></td>
+							</tr>
+							<tr>
+								<td><input class="form-control" type="" name="" placeholder="Telefóno"></td>
+							</tr>
+							<tr>
+								<td><input class="form-control" type="password" name="" placeholder="clave"></td>
+							</tr>
+							<tr>
+								<td>boton google</td>
+							</tr>							
+				  	</table>
+				  </form>
+				</div>
+			</div>
+		</div>
+		<!--/Registro de clientes -->
 
 		<!-- Nuevo socio -->
 		<div id="newPart" class="panel">
@@ -337,7 +371,7 @@
 		</div>
 
 		<div id="canastas" class="panel">
-			<div class="content">				
+			<div class="content">
 				<h2>canastas</h2>
 
 				<div class="" id="galeria">
@@ -452,52 +486,6 @@
 				<a href="#tramite"><img id="btnRegresar" src="imagenes/regresar.png"></a>
 			</div>
 		</div>
-
-		<!--Registro de clientes -->
-
-		<div id="formNewCliente" class="panel">
-			<div class="content">
-				<h2>Registro Nuevo Cliente</h2>
-				<div class="testbox2">
-				  <form action="">
-				  	<table id="tabla2" align="center">
-				  		<tr>
-				  			<td>
-				  				<input type="text" name="rutCli" id="txtRutCli" maxlength="8" placeholder="Rut" required/>
-				  				<input type="text" name="dvCli" id="txtDvCli" maxlength="1" placeholder="Dv" required/>
-				  			</td>
-				  		</tr>
-				  		<tr>
-				  			<td>
-				  				<input type="text" name="nombreCli" id="txtNombreCli" placeholder="Nombre" required/>
-				  			</td>
-				  		</tr>
-				  		<tr>
-				  			<td>
-				  				<input type="text" name="apellidoCli" id="txtApellidoCli" placeholder="Apellido" required/>
-				  			</td>
-				  		</tr>
-				  		<tr>
-				  			<td>
-				  				<input type="text" name="DirecciónCli" id="txtDireccCli" placeholder="Dirección" required/>
-				  			</td>
-				  		</tr>
-				  		<tr>
-				  			<td><input type="text" name="telefonoCli" id="txtTelefonoCli" placeholder="Telefóno" required/></td>
-				  		</tr>
-				  		<tr>
-				  			<td><input type="text" name="emailCli" id="txtEmailCli" placeholder="Correo electrónico" required/></td>
-				  		</tr>
-				  		<tr>
-				  			<td><center><a href="#" class="button2">Guardar</a></center></td>
-				  		</tr>
-				  	</table>
-				  </form>
-				</div>
-				<a href="#"><img id="btnRegresar" src="imagenes/regresar.png"></a>
-			</div>
-		</div>
-		<!--/Registro de clientes -->
 
 		<!-- menu de navegacion -->
 		<div id="header">
