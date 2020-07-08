@@ -95,7 +95,7 @@
 								<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
 							</tr>
 							<tr>
-								<td><input class="form-control" type="" name="" placeholder="Nombred"></td>
+								<td><input class="form-control" type="" name="" placeholder="Nombre"></td>
 							</tr>
 							<tr>
 								<td><input class="form-control" type="" name="" placeholder="Apellido"></td>
@@ -110,8 +110,8 @@
 								<td><input class="form-control" type="password" name="" placeholder="clave"></td>
 							</tr>
 							<tr>
-								<td>boton google</td>
-							</tr>							
+				  			<td><div class="g-signin2" data-onsuccess="onSignIn"></div></td>
+				  		</tr>						
 				  	</table>
 				  </form>
 				</div>
