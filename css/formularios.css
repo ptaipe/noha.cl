@@ -24,11 +24,13 @@
 }
 
 #frmDelivery{
-
     padding-left: 15px;
     padding-right: 15px;
 }
 /*Formulario Registro de clientes*/
+#clte{
+    margin-top: 71px;
+}
 #tablaClientes{
 	width: 50%;
     margin: 0 auto;
@@ -37,21 +39,13 @@
 }
 
 #btnGoogle{
-	border:none;
-	width: 100%;
-	text-align: -webkit-center;
+	border:none;	
+	
 	background-color: transparent;
 }
 #BtnRegistrar{
-margin-top: 20px;
+    margin-top: 20px;
+         width: 122px;
 
 }
-/*Formulario Registro de clientes*/
-Columnaapellido
-Columnaclave
-ColumnaDireccion
-Columnaemail
-ColumnaidUsuario
-Columnanombre
-Columnarut
-Columnatelefono
+

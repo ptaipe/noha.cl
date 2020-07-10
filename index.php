@@ -29,7 +29,29 @@
 			<!--precarga de backgrounds-->
 		</div>
 
-		<!-- Tramites -->
+			<!-- menu de navegacion -->
+		<div id="header">
+			<h1>Nosotros lo hacemos por ti</h1>
+			<ul id="navigation">
+				<li>
+					<a id="tram" href="#tramite">Servicios</a>
+					<img id="ico" src="imagenes/iconoTramites.png">
+				</li>
+				<li>
+					<a id="new" href="#formNewCliente">Registro Cliente</a>
+					<img id="ico3" src="imagenes/iconoSocios.png">
+				</li>
+				<li>
+					<a id="new" href="#newPart">Registro Socio</a>
+					<img id="ico3" src="imagenes/iconoSocios.png">
+				</li>
+				<li>
+					<a id="serv" href="#servicio">Nuestro Servicio</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Menu Servicios -->
 		<div id="tramite" class="panel">
 			<div id="tablaMenu">
 				<table class="table table-sm table-borderless">
@@ -75,46 +97,40 @@
 				</a>
 			</div>
 		</div>
-		<!-- /Trámites -->
-
-		<!-- Compras -->
-		<div id="tienda" class="panel">
-			<div class="content">
-				<h2>Compras</h2>
-			</div>
-		</div>
-		<!-- /Compras -->
+		<!-- /Menu Servicios -->
 
 		<!--Registro de clientes -->
 		<div id="formNewCliente" class="panel">
 			<div class="content">
 				<h2>Registro Nuevo Cliente</h2>
-				  <form action="">
+				  <form action="" id="clte">
 				  	<table class="table table-sm table-borderless table-responsive-sm" id="tablaClientes">
-							<tr>
-								<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
-							</tr>
-							<tr>
-								<td><input class="form-control" type="" name="" placeholder="Nombre"></td>
-							</tr>
-							<tr>
-								<td><input class="form-control" type="" name="" placeholder="Apellido"></td>
-							</tr>
-							<tr>
-								<td><input class="form-control" type="" name="" placeholder="Correo electrónico"></td>
-							</tr>
-							<tr>
-								<td><input class="form-control" type="" name="" placeholder="Telefóno"></td>
-							</tr>
-							<tr>
-								<td><input class="form-control" type="password" name="" placeholder="clave"></td>
-							</tr>
-							<tr>
-								<td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td>
+						<tr>
+							<td><input class="form-control form-control-sm" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control form-control-sm" type="" name="" placeholder="Nombre"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control form-control-sm" type="" name="" placeholder="Apellido"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control form-control-sm" type="" name="" placeholder="Correo electrónico"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control form-control-sm" type="" name="" placeholder="Telefóno"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control form-control-sm" type="password" name="" placeholder="clave"></td>
+						</tr>
+						<tr>
+							<td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td>
 				  		</tr>
-							<tr>
-									<td><button id="btnGoogle" type="button" name="button" class="g-signin2" data-onsuccess="onSignIn" > </button> </td>
-							</tr>
+						<tr>
+							<td>									
+								<button id="btnGoogle" type="button" name="button" class="g-signin2" data-onsuccess="onSignIn" ></button>
+							</td>
+						</tr>
 				  	</table>
 				  </form>
 				</div>
@@ -122,31 +138,62 @@
 		</div>
 		<!--/Registro de clientes -->
 
-		<!-- Nuevo socio -->
+		<!-- Registro socio -->
 		<div id="newPart" class="panel">
 			<div class="content">
-				<h2>Nuevo Socio Partner</h2>
-				<div class="testbox">
-				  <center><titulo class="tituloForm">Registro</titulo></center>
-
-				  <form action="">
-					  <hr>
-
-					  <input type="text" name="rut" id="txtRut" maxlength="8" placeholder="Rut" required/>
-					  <input type="text" name="dv" id="txtDv" maxlength="1" placeholder="Dv" required/>
-
-					  <input type="text" name="nombre" id="txtNombre" placeholder="Nombre" required/>
-					  <input type="text" name="apellido" id="txtApellido" placeholder="Apellido" required/>
-					  <input type="text" name="Dirección" id="txtDirecc" placeholder="Dirección" required/>
-					  <input type="text" name="telefono" id="txtTelefono" placeholder="Telefóno" required/>
-					  <input type="text" name=" id="txt placeholder="Correo electrónico" required/>
-					  <hr>
-					   <center><a href="#" class="button">Guardar</a></center>
-				  </form>
-				</div>
+			<h2>Nuevo Socio Partner</h2>				
+			  <form action="#">
+			  	<table class="table table-borderless table-sm" id="tablaClientes">
+					<tr>
+						<td><input class="form-control form-control-sm" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
+					</tr>
+					<tr>
+						<td><input class="form-control form-control-sm" type="" name="" placeholder="Nombre"></td>
+					</tr>
+					<tr>
+						<td><input class="form-control form-control-sm" type="" name="" placeholder="Apellido"></td>
+					</tr>
+					<tr>
+						<td><input class="form-control form-control-sm" type="" name="" placeholder="Correo electrónico"></td>
+					</tr>
+					<tr>
+						<td><input class="form-control form-control-sm" type="" name="" placeholder="Telefóno"></td>
+					</tr>
+					<tr>
+						<td>
+							<select class="form-control form-control-sm">
+								<option>Tipo de vehiculo</option>
+								<option>Auto movil</option>
+								<option>Motocicleta</option>
+								<option>Bicicleta</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><input class="form-control form-control-sm" type="" name="" placeholder="Patente"></td>
+					</tr>
+					<tr>
+						<td><input class="form-control form-control-sm" type="" name="" placeholder="Modelo"></td>
+					</tr>
+					<tr>
+						<td><input class="form-control form-control-sm" type="date" name="" ></td>
+					</tr>
+					<tr>
+						<td><input class="form-control form-control-sm" type="password" name="" placeholder="clave"></td>
+					</tr>
+					<tr>
+						<td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td>
+			  		</tr>
+					<tr>
+						<td>									
+							<button id="btnGoogle" type="button" name="button" class="g-signin2" data-onsuccess="onSignIn" ></button>
+						</td>
+					</tr>
+			  	</table>
+			  </form>				
 			</div>
 		</div>
-		<!-- /Nuevo Socio -->
+		<!-- /Registro Socio -->
 
 		<!-- Nuestro Servicio -->
 		<div id="servicio" class="panel">
@@ -159,7 +206,7 @@
 		</div>
 		<!-- /Nuestro Servicio -->
 
-		<!--Interior de Menu de tramites -->
+		<!--Menu Revision Tecnica -->
 		<div id="revisiónTec" class="panel">
 			<div class="content">
 				  <form action="">
@@ -246,7 +293,9 @@
 				</a>
 			</div>
 		</div>
+		<!--/Menu Revision Tecnica -->
 
+		<!--Menu Envio Encomiendas -->
 		<div id="encargosEnvios" class="panel">
 			<div class="content">
 				<h2>Encargos o envios</h2>
@@ -370,9 +419,17 @@
 	  					<a href="#" id="guardarrt" class="btn btn-primary btn-sm active" role="button">Guardar</a>
 	  			  </center>
 				</div>
+				<a href="#tramite" id="btnvolver">
+					<img id="volverrtEE" src="imagenes/volver.png">
+				</a>
+				<a href="#">
+						<img id="cerrarMenu" src="imagenes/cerrar.png">
+				</a>
 			</div>
 		</div>
+		<!--/Menu Envio Encomiendas -->
 
+		<!--Menu compra canastas -->
 		<div id="canastas" class="panel">
 			<div class="content">
 				<h2>canastas</h2>
@@ -426,91 +483,33 @@
 				</div>
 
 			</div>
+			<a href="#tramite" id="btnvolver">
+					<img id="volverrtEE" src="imagenes/volver.png">
+			</a>
+			<a href="#">
+					<img id="cerrarMenu" src="imagenes/cerrar.png">
+			</a>
 		</div>
+		<!--/Menu compra canastas -->
 
+		<!--Menu compra regalos -->
 		<div id="comprasVarias" class="panel">
 			<div class="content">
 				<h2>Compras Regalos u otros</h2>
 
-				<div class="testbox3">
-				  <form action="">
-				  	<table id="tabla3" align="center">
-				  		<tr>
-				  			<td>
-				  				<input type="text" name="rutCli" id="RtxtRutCli" maxlength="8" placeholder="Rut" required/>
-				  				<input type="text" name="dvCli" id="RtxtDvCli" maxlength="1" placeholder="Dv" required/>
-				  			</td>
-				  			<td><input type="text" name="txtPatente" id="RtxtPatente" maxlength="6" placeholder="" required/></td>
-				  		</tr>
-				  		<tr>
-				  			<td>
-				  				<input disabled="on" type="text" name="nombreCli" id="RtxtNombreCli" placeholder="Nombre" required/>
-				  			</td>
-				  			<td>
-				  				<input type="text" name="tipoCompra" id="tpCompra" maxlength="4" placeholder="Tipo de compra" required/>
-				  			</td>
-				  		</tr>
-				  		<tr>
-				  			<td>
-				  				<input disabled="on" type="text" name="apellidoCli" id="RtxtApellidoCli" placeholder="Apellido" required/>
-				  			</td>
-				  			<td ><input type="text" name="marcaAuto" id="RtxtMarca" placeholder="Marca de auto" required/></td>
-				  		</tr>
-				  		<tr>
-				  			<td>
-				  				<input disabled="on" type="text" name="DirecciónCli" id="RtxtDireccCli" placeholder="Dirección" required/>
-				  			</td>
-				  			<td>
-				  				<input type="text" name="adressTramite" id="RadressTramite" placeholder="Marca de Auto" required/>
-				  			</td>
-				  		</tr>
-				  		<tr>
-				  			<td>
-				  				<input disabled="on" type="text" name="telefonoCli" id="RtxtTelefonoCli" placeholder="Telefóno" required/>
-				  			</td>
-				  			<td>
-				  				<input type="text" name="plantarevisión" id="Rplantarevisión" placeholder="Planta de revisión tecnica" required/>
-				  			</td>
-				  		</tr>
-				  		<tr>
-				  			<td>
-				  				<input disabled="on" type="text" name="emailCli" id="" placeholder="Correo electrónico" required/>
-				  			</td>
-				  			<td></td>
-				  		</tr>
-				  		<tr>
-				  			<td colspan="2">
-				  				<center><a href="#" class="button2">Guardar</a></center>
-				  			</td>
-				  		</tr>
-				  	</table>
-				  </form>
-				</div>
-				<a href="#tramite"><img id="btnRegresar" src="imagenes/regresar.png"></a>
+				
+				
 			</div>
+			<a href="#tramite" id="btnvolver">
+					<img id="volverrtCR" src="imagenes/volver.png">
+				</a>
+			<a href="#">
+					<img id="cerrarMenu" src="imagenes/cerrar.png">
+			</a>
 		</div>
+		<!--/Menu compra regalos -->
 
-		<!-- menu de navegacion -->
-		<div id="header">
-			<h1>Nosotros lo hacemos por ti</h1>
-			<ul id="navigation">
-				<li>
-					<a id="tram" href="#tramite">Servicios</a>
-					<img id="ico" src="imagenes/iconoTramites.png">
-				</li>
-				<li>
-					<a id="new" href="#formNewCliente">Registro Cliente</a>
-					<img id="ico3" src="imagenes/iconoSocios.png">
-				</li>
-				<li>
-					<a id="new" href="#newPart">Registro Socio</a>
-					<img id="ico3" src="imagenes/iconoSocios.png">
-				</li>
-				<li>
-					<a id="serv" href="#servicio">Nuestro Servicio</a>
-				</li>
-			</ul>
-		</div>
+
 
 		<footer id="footer">
 			
