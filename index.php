@@ -110,8 +110,11 @@
 								<td><input class="form-control" type="password" name="" placeholder="clave"></td>
 							</tr>
 							<tr>
-				  			<td><div class="g-signin2" data-onsuccess="onSignIn"></div></td>
-				  		</tr>						
+								<td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td>
+				  		</tr>
+							<tr>
+									<td><button id="btnGoogle" type="button" name="button" class="g-signin2" data-onsuccess="onSignIn" > </button> </td>
+							</tr>
 				  	</table>
 				  </form>
 				</div>

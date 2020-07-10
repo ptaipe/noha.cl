@@ -34,9 +34,19 @@
 #tablaClientes{
 	width: 50%;
   margin: 0 auto;
+	text-align: center;
 }
 .g-signin2{
-	margin-top: 10px;
+
+}
+#btnGoogle{
+	border:none;
+	width: 100%;
+	text-align: -webkit-center;
+	background-color: transparent;
+}
+#BtnRegistrar{
+margin-top: 20px;
 
 }
 /*Formulario Registro de clientes*/
