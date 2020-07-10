@@ -1,30 +1,28 @@
 #tablePedidoRT{
 	margin-top: 87px;
-	background-color: rgba(245, 245, 245,0.85);
+	background-color: rgba(110, 105, 109, 0.58);
 	width: 60%;
-  margin-left: 217px;
+    margin-left: 217px;
 }
 #tableEnvios1{
-	background-color: rgba(245, 245, 245,0.85);
+	background-color: rgba(110, 105, 109, 0.58);
     margin-top: 20px;
     width: 45%;
     float: left;
 }
 #tableEnvios2{
-	background-color: rgba(245, 245, 245,0.85);
+	background-color: rgba(110, 105, 109, 0.58);
     margin-top: 20px;
     width: 45%;
     float: right;
 }
 #tableEnvios3{
-	background-color: rgba(245, 245, 245,0.85);
+	background-color: rgba(110, 105, 109, 0.58);
     margin-top: 20px;
     width: 70%;
     margin-left: 177px;
 }
-#tableEnvios1:hover,#tableEnvios2:hover,#tablePedidoRT:hover{
-    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.86);
-}
+
 #frmDelivery{
 
     padding-left: 15px;
@@ -33,12 +31,11 @@
 /*Formulario Registro de clientes*/
 #tablaClientes{
 	width: 50%;
-  margin: 0 auto;
+    margin: 0 auto;
 	text-align: center;
+    background-color: rgba(110, 105, 109, 0.58);
 }
-.g-signin2{
 
-}
 #btnGoogle{
 	border:none;
 	width: 100%;

@@ -178,7 +178,7 @@ body {
 
 .panel{
 	min-width: 81%;
-    height: 84.6%;
+    height: 90%;
     overflow-y: auto;
     overflow-x: hidden;
     margin-top: -150%;
@@ -187,7 +187,7 @@ body {
     transition: all .9s ease-in-out;
 }
 .panel:target{
-	margin-top: 2.2%;
+	margin-top: 2.3%;
     margin-left: 18%;
     width: 77%;
     background: rgb(255, 255, 255, 0.65);

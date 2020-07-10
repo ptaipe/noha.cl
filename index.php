@@ -175,32 +175,32 @@
 								  <div class="input-group-prepend">
 								    <span class="form-control form-control-sm">Rut</span>
 								  </div>
-									<input type="text" class="form-control form-control-sm" name="rutCli" id="" maxlength="8" placeholder="ejemplo: 12345678" required/>
+									<input type="text" class="form-control form-control-sm" name="" id="" maxlength="8" placeholder="ejemplo: 12345678" required/>
 								</div>
 				  			</td>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="txtPatente" id="" maxlength="6" placeholder="Patente sin guión ej: ffgg52" required/>
+				  				<input type="text" class="form-control form-control-sm" name="" id="" maxlength="6" placeholder="Patente sin guión ej: ffgg52" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="nombreCli" id="" placeholder="Nombre" required/>
+				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Nombre" required/>
 				  			</td>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="añoAuto" id="" maxlength="4" placeholder="Año de Vehículo" required/>
+				  				<input type="text" class="form-control form-control-sm" name="" id="" maxlength="4" placeholder="Año de Vehículo" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="apellidoCli" id="" placeholder="Apellido" required/>
+				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Apellido" required/>
 				  			</td>
 				  			<td >
-				  				<input type="text" class="form-control form-control-sm" name="marcaAuto" id="" placeholder="Marca de auto" required/>
+				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Marca de auto" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="DirecciónCli" id="" placeholder="Dirección" required/>
+				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Dirección" required/>
 				  			</td>
 				  			<td>
 								<div class="container">
@@ -213,10 +213,10 @@
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="telefonoCli" id="" placeholder="Telefóno" required/>
+				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Telefóno" required/>
 				  			</td>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="plantarevisión" id="" placeholder="Planta de revisión técnica" required/>
+				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Planta de revisión técnica" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
@@ -230,7 +230,7 @@
 				  		<tr>
 				  			<td colspan="2">
 				  				<center>
-				  					<a href="#" id="guardarrt" class="btn btn-primary btn-sm active" role="button">Guardar</a>
+				  					<a href="#" id="" class="btn btn-info btn-sm active" role="button">Guardar</a>
 				  				</center>
 				  			</td>
 				  		</tr>
@@ -513,22 +513,7 @@
 		</div>
 
 		<footer id="footer">
-			<div>
-				<table class="table table-sm table-borderless" style="text-align: center;">
-					<tr>
-						<td>Dirección</td>
-						<td>Telefono</td>
-						<td>Celular</td>
-						<td>Email</td>
-					</tr>
-					<tr>
-						<td>Av. Americo Vespucio 1940, Santiago, Conchalí, Oficina: 814</td>
-						<td>+56 227340487</td>
-						<td>+569 71920899 - +569 87549928</td>
-						<td>contacto@noha.cl</td>
-					</tr>
-				</table>
-			</div>
+			
 		</footer>
 	</body>
 </html>
