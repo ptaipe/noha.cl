@@ -149,25 +149,22 @@ body {
 }
 
 #ico{
-	width: 37px;
-    height: 46px;
-    margin-top: -67px;
+	height: 46px;
+    margin-top: -69px;
     position: absolute;
-    margin-left: 196px;
+    margin-left: 171px;
 }
 #ico2{
-	width: 40px;
-	height: 42px;
-	margin-top: -69px;
-	position: absolute;
-	margin-left: 177px;
-}
-#ico3{
-	width: 34px;
-    height: 25px;
-    margin-top: -57px;
+	height: 46px;
+    margin-top: -72px;
     position: absolute;
-    margin-left: 194px;
+    margin-left: 185px;
+}
+#ico3{	
+    height: 59px;
+    margin-top: -77px;
+    margin-left: 173px;
+    position: absolute;
 }
 /*fin del estilo del menu*/
 

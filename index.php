@@ -59,18 +59,18 @@
 			<ul id="navigation">
 				<li>
 					<a id="tram" href="#tramite">Servicios</a>
-					<img id="ico" src="imagenes/iconoTramites.png">
+					<img id="ico" src="imagenes/servicios.png">
 				</li>
 				<li>
 					<a id="new" href="#formNewCliente">Registro Cliente</a>
-					<img id="ico3" src="imagenes/iconoSocios.png">
+					<img id="ico2" src="imagenes/iconoCliente.png">
 				</li>
 				<li>
 					<a id="new" href="#newPart">Registro Socio</a>
 					<img id="ico3" src="imagenes/iconoSocios.png">
 				</li>
 				<li>
-					<a id="serv" href="#servicio">Nuestro Servicio</a>
+					<a id="serv" href="#servicio">Quienes Somos</a>
 				</li>
 			</ul>
 		</div>
@@ -130,22 +130,22 @@
 				  <form action="" id="clte">
 				  	<table class="table table-sm table-borderless table-responsive-sm" id="tablaClientes">
 						<tr>
-							<td><input class="form-control form-control-sm" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
+							<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
 						</tr>
 						<tr>
-							<td><input class="form-control form-control-sm" type="" name="" placeholder="Nombre"></td>
+							<td><input class="form-control " type="" name="" placeholder="Nombre"></td>
 						</tr>
 						<tr>
-							<td><input class="form-control form-control-sm" type="" name="" placeholder="Apellido"></td>
+							<td><input class="form-control " type="" name="" placeholder="Apellido"></td>
 						</tr>
 						<tr>
-							<td><input class="form-control form-control-sm" type="" name="" placeholder="Correo electrónico"></td>
+							<td><input class="form-control " type="" name="" placeholder="Correo electrónico"></td>
 						</tr>
 						<tr>
-							<td><input class="form-control form-control-sm" type="" name="" placeholder="Telefóno"></td>
+							<td><input class="form-control " type="" name="" placeholder="Telefóno"></td>
 						</tr>
 						<tr>
-							<td><input class="form-control form-control-sm" type="password" name="" placeholder="clave"></td>
+							<td><input class="form-control " type="password" name="" placeholder="Clave"></td>
 						</tr>
 						<tr>
 							<td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td>
@@ -169,24 +169,24 @@
 			  <form action="#">
 			  	<table class="table table-borderless table-sm" id="tablaClientes">
 					<tr>
-						<td><input class="form-control form-control-sm" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
+						<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
 					</tr>
 					<tr>
-						<td><input class="form-control form-control-sm" type="" name="" placeholder="Nombre"></td>
+						<td><input class="form-control" type="" name="" placeholder="Nombre"></td>
 					</tr>
 					<tr>
-						<td><input class="form-control form-control-sm" type="" name="" placeholder="Apellido"></td>
+						<td><input class="form-control" type="" name="" placeholder="Apellido"></td>
 					</tr>
 					<tr>
-						<td><input class="form-control form-control-sm" type="" name="" placeholder="Correo electrónico"></td>
+						<td><input class="form-control" type="" name="" placeholder="Correo electrónico"></td>
 					</tr>
 					<tr>
-						<td><input class="form-control form-control-sm" type="" name="" placeholder="Telefóno"></td>
+						<td><input class="form-control" type="" name="" placeholder="Telefóno"></td>
 					</tr>
 					<tr>
 						<td>
-							<select class="form-control form-control-sm">
-								<option>Tipo de vehiculo</option>
+							<select class="form-control">
+								<option>Tipo de vehículo</option>
 								<option>Auto movil</option>
 								<option>Motocicleta</option>
 								<option>Bicicleta</option>
@@ -194,16 +194,16 @@
 						</td>
 					</tr>
 					<tr>
-						<td><input class="form-control form-control-sm" type="" name="" placeholder="Patente"></td>
+						<td><input class="form-control" type="" name="" placeholder="Patente"></td>
 					</tr>
 					<tr>
-						<td><input class="form-control form-control-sm" type="" name="" placeholder="Modelo"></td>
+						<td><input class="form-control" type="" name="" placeholder="Modelo"></td>
 					</tr>
 					<tr>
-						<td><input class="form-control form-control-sm" type="date" name="" ></td>
+						<td><input class="form-control" type="date" name="" ></td>
 					</tr>
 					<tr>
-						<td><input class="form-control form-control-sm" type="password" name="" placeholder="clave"></td>
+						<td><input class="form-control" type="password" name="" placeholder="Clave"></td>
 					</tr>
 					<tr>
 						<td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td>
@@ -244,34 +244,34 @@
 				  			<td >
 				  				<div class="input-group">
 								  <div class="input-group-prepend">
-								    <span class="form-control form-control-sm">Rut</span>
+								    <span class="form-control">Rut</span>
 								  </div>
-									<input type="text" class="form-control form-control-sm" name="" id="" maxlength="8" placeholder="ejemplo: 12345678" required/>
+									<input type="text" class="form-control" name="" id="" maxlength="8" placeholder="ejemplo: 12345678" required/>
 								</div>
 				  			</td>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="" id="" maxlength="6" placeholder="Patente sin guión ej: ffgg52" required/>
+				  				<input type="text" class="form-control" name="" id="" maxlength="6" placeholder="Patente sin guión ej: ffgg52" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Nombre" required/>
+				  				<input type="text" class="form-control" name="" id="" placeholder="Nombre" required/>
 				  			</td>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="" id="" maxlength="4" placeholder="Año de Vehículo" required/>
+				  				<input type="text" class="form-control" name="" id="" maxlength="4" placeholder="Año de Vehículo" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Apellido" required/>
+				  				<input type="text" class="form-control" name="" id="" placeholder="Apellido" required/>
 				  			</td>
 				  			<td >
-				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Marca de auto" required/>
+				  				<input type="text" class="form-control" name="" id="" placeholder="Marca de auto" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Dirección" required/>
+				  				<input type="text" class="form-control" name="" id="" placeholder="Dirección" required/>
 				  			</td>
 				  			<td>
 								<div class="container">
@@ -284,18 +284,18 @@
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Telefóno" required/>
+				  				<input type="text" class="form-control" name="" id="" placeholder="Telefóno" required/>
 				  			</td>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Planta de revisión técnica" required/>
+				  				<input type="text" class="form-control" name="" id="" placeholder="Planta de revisión técnica" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control form-control-sm" name="" id="" placeholder="Correo electrónico" required/>
+				  				<input type="text" class="form-control" name="" id="" placeholder="Correo electrónico" required/>
 				  			</td>
 				  			<td>
-				  				<input type="date" class="form-control form-control-sm" name="" placeholder="Fecha Inicio">
+				  				<input type="date" class="form-control" name="" placeholder="Fecha Inicio">
 				  			</td>
 				  		</tr>
 				  		<tr>
@@ -333,35 +333,35 @@
 					  			<td>
 					  				<div class="input-group">
 									  <div class="input-group-prepend">
-									    <span class="form-control form-control-sm">Rut</span>
+									    <span class="form-control">Rut</span>
 									  </div>
-										<input type="text" class="form-control form-control-sm" name="rutCli" id="RtxtRutCli" maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
+										<input type="text" class="form-control" name="rutCli" id="RtxtRutCli" maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
 									</div>
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control form-control-sm" name="nombreCli" id="RtxtNombreCli" placeholder="Nombre" required="">
+					  				<input type="text" class="form-control" name="nombreCli" id="RtxtNombreCli" placeholder="Nombre" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control form-control-sm" name="apellidoCli" id="RtxtApellidoCli" placeholder="Apellido" required="">
+					  				<input type="text" class="form-control" name="apellidoCli" id="RtxtApellidoCli" placeholder="Apellido" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control form-control-sm" name="DirecciónCli" id="RtxtDireccCli" placeholder="Dirección" required="">
+					  				<input type="text" class="form-control" name="DirecciónCli" id="RtxtDireccCli" placeholder="Dirección" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control form-control-sm" name="telefonoCli" id="RtxtTelefonoCli" placeholder="Telefóno" required="">
+					  				<input type="text" class="form-control" name="telefonoCli" id="RtxtTelefonoCli" placeholder="Telefóno" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control form-control-sm" name="emailCli" id="" placeholder="Correo electrónico" required="">
+					  				<input type="text" class="form-control" name="emailCli" id="" placeholder="Correo electrónico" required="">
 					  			</td>
 					  		</tr>
 					  	</tbody>
@@ -375,35 +375,35 @@
 					  			<td>
 					  				<div class="input-group">
 									  <div class="input-group-prepend">
-									    <span class="form-control form-control-sm">Rut</span>
+									    <span class="form-control">Rut</span>
 									  </div>
-										<input type="text" class="form-control form-control-sm" name="rutCli" id="RtxtRutCli" maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
+										<input type="text" class="form-control" name="rutCli" id="RtxtRutCli" maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
 									</div>
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control form-control-sm" name="nombreCli" id="RtxtNombreCli" placeholder="Nombre" required="">
+					  				<input type="text" class="form-control" name="nombreCli" id="RtxtNombreCli" placeholder="Nombre" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control form-control-sm" name="apellidoCli" id="RtxtApellidoCli" placeholder="Apellido" required="">
+					  				<input type="text" class="form-control" name="apellidoCli" id="RtxtApellidoCli" placeholder="Apellido" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control form-control-sm" name="DirecciónCli" id="RtxtDireccCli" placeholder="Dirección" required="">
+					  				<input type="text" class="form-control" name="DirecciónCli" id="RtxtDireccCli" placeholder="Dirección" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control form-control-sm" name="telefonoCli" id="RtxtTelefonoCli" placeholder="Telefóno" required="">
+					  				<input type="text" class="form-control" name="telefonoCli" id="RtxtTelefonoCli" placeholder="Telefóno" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control form-control-sm" name="emailCli" id="" placeholder="Correo electrónico" required="">
+					  				<input type="text" class="form-control" name="emailCli" id="" placeholder="Correo electrónico" required="">
 					  			</td>
 					  		</tr>
 					  	</tbody>
@@ -412,10 +412,10 @@
 				  	<tr>
 				  		<td><label>¿Cuanto Pesa?</label></td>
 
-				  		<td><input type="text" class="form-control form-control-sm" id="" placeholder="Kilogramos"></td>
+				  		<td><input type="text" class="form-control" id="" placeholder="Kilogramos"></td>
 
 				  		<td colspan="3">
-				  			<select class="form-control form-control-sm">
+				  			<select class="form-control">
 				  				<option>TIPO DE CAJA</option>
 				  				<option>CAJA CHICA</option>
 				  				<option>CAJA NORMAL</option>
@@ -429,13 +429,13 @@
 				  			<label>¿Cuanto Mide?</label>
 				  		</td>
 				  		<td>
-				  			<input type="text" class="form-control form-control-sm" id="" placeholder="Largo en cm.">
+				  			<input type="text" class="form-control" id="" placeholder="Largo en cm.">
 				  		</td>
 				  		<td>
-				  			<input type="text" class="form-control form-control-sm" id="" placeholder="Ancho en cm.">
+				  			<input type="text" class="form-control" id="" placeholder="Ancho en cm.">
 				  		</td>
 				  		<td>
-				  			<input type="text" class="form-control form-control-sm" id="" placeholder="Profundidad en cm.">
+				  			<input type="text" class="form-control" id="" placeholder="Profundidad en cm.">
 				  		</td>
 				  	</tr>
 				  </table>
