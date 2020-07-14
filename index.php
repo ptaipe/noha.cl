@@ -17,17 +17,41 @@
 		<link rel="stylesheet" type="text/css" href="css/formRegisUser.css"/>
 		<link rel="stylesheet" type="text/css" href="css/formularios.css"/>
 		<link rel="stylesheet" type="text/css" href="css/productos.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 
 		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1/dist/css/bootstrap.min.css">
 
-		<script src="js/validarRut.js?v=1"></script>
-		<script src="js/bodySlider.js?v=1"></script>
+		<script src="js/login.js"></script>
+		<script src="js/bodySlider.js"></script>
 
 	</head>
 	<body background="imagenes/fondo6.jpg">
 		<div id="precarga">
 			<!--precarga de backgrounds-->
 		</div>
+
+		<a href="#login" id="L" class="btn btn-primary btn-sm active">Iniciar Sesion</a>
+
+
+		<!-- Inicio de sesion -->
+		<div id="login" class="panel">
+			<div id="">
+				<div class="login">
+				  <div class="login-header">
+				    <h1>login</h1>
+				  </div>
+				  <div class="login-form">
+				    <h3>usuario:</h3>
+				    <input type="text" placeholder="Username" class="form-control"/><br>
+				    <h3>clave:</h3>
+				    <input type="password" placeholder="Password" class="form-control"/>
+				    <br>
+				    <input type="button" value="Login" class="login-button" class="form-control"/> 
+				  </div>
+				</div>
+			</div>
+		</div>
+		<!-- /inicio sesion -->
 
 			<!-- menu de navegacion -->
 		<div id="header">
