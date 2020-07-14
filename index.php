@@ -32,7 +32,6 @@
 
 		<a href="#login" id="L" class="btn btn-primary btn-sm active">Iniciar Sesion</a>
 
-
 		<!-- Inicio de sesion -->
 		<div id="login" class="panel">
 			<div id="">
@@ -46,10 +45,13 @@
 				    <h3>clave:</h3>
 				    <input type="password" placeholder="Password" class="form-control"/>
 				    <br>
-				    <input type="button" value="Login" class="login-button" class="form-control"/> 
+				    <input type="button" value="Iniciar" class="btn btn-light"/> 
 				  </div>
 				</div>
 			</div>
+			<a href="#">
+					<img id="cerrarMenu" src="imagenes/cerrar.png">
+			</a>			
 		</div>
 		<!-- /inicio sesion -->
 
@@ -410,7 +412,7 @@
 				  </table>
 				  <table id="tableEnvios3">
 				  	<tr>
-				  		<td><label>¿Cuanto Pesa?</label></td>
+				  		<td><label id="subtitle">¿Cuanto Pesa?</label></td>
 
 				  		<td><input type="text" class="form-control" id="" placeholder="Kilogramos"></td>
 
@@ -426,7 +428,7 @@
 				  	</tr>
 				  	<tr>
 				  		<td >
-				  			<label>¿Cuanto Mide?</label>
+				  			<label id="subtitle">¿Cuanto Mide?</label>
 				  		</td>
 				  		<td>
 				  			<input type="text" class="form-control" id="" placeholder="Largo en cm.">
