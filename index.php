@@ -14,23 +14,21 @@
 		<link rel="stylesheet" type="text/css" href="css/popup.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" type="text/css" href="css/styleMobile.css"/>
-		<link rel="stylesheet" type="text/css" href="css/formRegisUser.css"/>
+		
 		<link rel="stylesheet" type="text/css" href="css/formularios.css"/>
 		<link rel="stylesheet" type="text/css" href="css/productos.css"/>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 
 		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1/dist/css/bootstrap.min.css">
 
-		<script src="js/login.js"></script>
+		
 		<script src="js/bodySlider.js"></script>
 
 	</head>
 	<body background="imagenes/fondo6.jpg">
 		<div id="precarga">
 			<!--precarga de backgrounds-->
-		</div>
-
-		<a href="#login" id="L" class="btn btn-primary btn-sm active">Iniciar Sesion</a>
+		</div>	
 
 		<!-- Inicio de sesion -->
 		<div id="login" class="panel">
@@ -73,8 +71,9 @@
 				</li>
 				<li>
 					<a id="serv" href="#servicio">Quienes Somos</a>
-				</li>
+				</li>				
 			</ul>
+			<a href="#login" id="L" class="btn btn-primary btn-sm active">Iniciar Sesion</a>
 		</div>
 
 		<!-- Menu Servicios -->
@@ -135,19 +134,19 @@
 							<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
 						</tr>
 						<tr>
-							<td><input class="form-control " type="" name="" placeholder="Nombre"></td>
+							<td><input class="form-control" type="" name="" placeholder="Nombre"></td>
 						</tr>
 						<tr>
-							<td><input class="form-control " type="" name="" placeholder="Apellido"></td>
+							<td><input class="form-control" type="" name="" placeholder="Apellido"></td>
 						</tr>
 						<tr>
-							<td><input class="form-control " type="" name="" placeholder="Correo electrónico"></td>
+							<td><input class="form-control" type="" name="" placeholder="Correo electrónico"></td>
 						</tr>
 						<tr>
-							<td><input class="form-control " type="" name="" placeholder="Telefóno"></td>
+							<td><input class="form-control" type="" name="" placeholder="Telefóno"></td>
 						</tr>
 						<tr>
-							<td><input class="form-control " type="password" name="" placeholder="Clave"></td>
+							<td><input class="form-control" type="password" name="" placeholder="Clave"></td>
 						</tr>
 						<tr>
 							<td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td>
@@ -535,10 +534,6 @@
 		</div>
 		<!--/Menu compra regalos -->
 
-
-
-		<footer id="footer">
-			
-		</footer>
+	
 	</body>
 </html>
