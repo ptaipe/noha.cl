@@ -71,6 +71,7 @@
 				</li>
 				<li>
 					<a id="serv" href="#servicio">Quienes Somos</a>
+					<img id="ico4" src="imagenes/somos.png">
 				</li>				
 			</ul>
 			<a href="#login" id="L" class="btn btn-primary btn-sm active">Iniciar Sesion</a>

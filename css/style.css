@@ -166,6 +166,12 @@ body {
     margin-left: 173px;
     position: absolute;
 }
+#ico4{  
+    height: 48px;
+    margin-top: -70px;
+    margin-left: 180px;
+    position: absolute;
+}
 /*fin del estilo del menu*/
 
 .content{
@@ -174,7 +180,6 @@ body {
     top: -5px;
     position: absolute;
     padding-bottom: 0px;
-
 }
 .content h2{
 	font-size: 44px;
@@ -190,7 +195,7 @@ body {
     margin-top: -150%;
     position: absolute;
     z-index: 2;
-    transition: all .9s ease-in-out;
+    transition: all .6s ease-in-out;
 }
 .panel:target{
 	margin-top: 2.3%;
@@ -209,6 +214,7 @@ body {
 {
 	background: #000;
 	color: #fff;
+    cursor: pointer;
 }
 #formSocio{
 	margin:auto 0;
@@ -252,7 +258,7 @@ body {
     margin-top: 3%;
     margin-bottom: 3px;
     background-color: white;
-    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.86);
+    box-shadow: 0px 0px 13px 8px rgb(236, 124, 29);
 }
 
 #menu1:hover,#menu3:hover{
@@ -261,9 +267,8 @@ body {
     margin-top: 3%;
     margin-bottom: 3px;
     background-color: white;
-    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.86);
+    box-shadow: 0px 0px 13px 8px rgb(236, 124, 29);
 }
-
 
 #btnRegresar{
 	width: 210px;
