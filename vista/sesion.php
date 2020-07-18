@@ -1,59 +1,44 @@
+<?php 
+	include ("../dataBase/conect.php");
+
+	session_start();
+
+	if (!$_SESSION)
+	{
+		header("Location: ../index.php");
+	}
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 	<head>
-		
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=no">
+		<meta name="google-signin-client_id" content="554781700782-0e42vcdoof308bd61h8tnmioiblhsvko.apps.googleusercontent.com">
 
 		<title>NoHa</title>
 
-		<link rel="shortcut icon" href="imagenes/logo.ico">
-		<link rel="stylesheet" type="text/css" href="css/tags.css"/>
-		<link rel="stylesheet" type="text/css" href="css/popup.css"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<link rel="stylesheet" type="text/css" href="css/styleMobile.css"/>
+		<link rel="shortcut icon" href="../imagenes/logo.ico">
+		<link rel="stylesheet" type="text/css" href="../css/tags.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/popup.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/styleMobile.css"/>
 		
-		<link rel="stylesheet" type="text/css" href="css/formularios.css"/>
-		<link rel="stylesheet" type="text/css" href="css/productos.css"/>
-		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/formularios.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/productos.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
 
-		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../bootstrap-4.3.1/dist/css/bootstrap.min.css">
 
 		
-		<script src="js/bodySlider.js"></script>
-		
+		<script src="../js/bodySlider2.js"></script>
 
 	</head>
-	<body background="imagenes/fondo6.jpg">
+	<body background="../imagenes/fondo6.jpg">
 		<div id="precarga">
 			<!--precarga de backgrounds-->
 		</div>
-
-		<!-- Inicio de sesion -->
-		<div id="login" class="panel">
-			<div id="">
-				<form method="post" action="control/login.php">
-					<div class="login">
-					  <div class="login-header">
-					    <h1>login</h1>
-					  </div>
-					  <div class="login-form">
-					    <h3>usuario:</h3>
-					    <input type="text" name="usuario" placeholder="correo" class="form-control"/><br>
-					    <h3>clave:</h3>
-					    <input type="password" name="pass" placeholder="Clave" class="form-control"/>
-					    <br>
-					    <input type="submit" value="Iniciar" class="btn btn-light"/> 
-					  </div>
-					</div>
-				</form>
-			</div>
-			<a href="#">
-					<img id="cerrarMenu" src="imagenes/cerrar.png">
-			</a>			
-		</div>
-		<!-- /inicio sesion -->
 
 			<!-- menu de navegacion -->
 		<div id="header">
@@ -61,22 +46,47 @@
 			<ul id="navigation">
 				<li>
 					<a id="tram" href="#tramite">Servicios</a>
-					<img id="ico" src="imagenes/servicios.png">
+					<img id="ico" src="../imagenes/servicios.png">
 				</li>
 				<li>
 					<a id="new" href="#formNewCliente">Registro Cliente</a>
-					<img id="ico2" src="imagenes/iconoCliente.png">
+					<img id="ico2" src="../imagenes/iconoCliente.png">
 				</li>
 				<li>
 					<a id="new" href="#newPart">Registro Socio</a>
-					<img id="ico3" src="imagenes/iconoSocios.png">
+					<img id="ico3" src="../imagenes/iconoSocios.png">
 				</li>
 				<li>
 					<a id="serv" href="#servicio">Quienes Somos</a>
-					<img id="ico4" src="imagenes/somos.png">
+					<img id="ico4" src="../imagenes/somos.png">
 				</li>				
 			</ul>
-			<a href="#login" id="L" class="btn btn-primary btn-sm active">Iniciar Sesion</a>
+
+
+			<form action="../index.php" method="post">
+				<table class="table table-sm table-hover table-dark table-borderless" style="
+				    background-color: rgba(255, 170, 0);
+				    text-align: center;
+				    font-weight: 650;
+				    text-shadow: 1px 1px 1px rgba(0,0, 0, 0.9);
+				    margin-bottom: -6px;
+				">
+					<tbody>
+						<tr>
+							<td>Bienvenido</td>
+							<td>
+								<?php
+									echo $_SESSION['nombre']
+								?>							
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<input id="L" style="font-size: 23px;letter-spacing: 1.5px;" type="submit" class="btn btn-primary btn-sm active" name="cerrar" value="Cerrar Sesión">	
+			</form>
+
+
+			
 		</div>
 
 		<!-- Menu Servicios -->
@@ -87,7 +97,7 @@
 						<td>
 							<div id="conf2">
 								<a href="#revisiónTec" >
-									<img id="menu2" src="imagenes/menuRevison.jpg" >
+									<img id="menu2" src="../imagenes/menuRevison.jpg" >
 								</a>
 								<label id="popup1">revision TECNICA</label>
 							</div>
@@ -95,7 +105,7 @@
 						<td>
 							<div id="conf3">
 								<a href="#encargosEnvios">
-									<img id="menu3" src="imagenes/menuEncargoEnvios.jpg">
+									<img id="menu3" src="../imagenes/menuEncargoEnvios.jpg">
 								</a>
 								<label id="popup2">ENVIO ENCOMIENDAS</label>
 							</div>
@@ -105,7 +115,7 @@
 						<td>
 							<div id="conf4">
 								<a href="#canastas">
-									<img id="menu4" src="imagenes/compras.jpg">
+									<img id="menu4" src="../imagenes/compras.jpg">
 								</a>
 								<label id="popup3">compra canastas</label>
 							</div>
@@ -113,7 +123,7 @@
 						<td>
 							<div id="conf1">
 								<a href="#comprasVarias">
-									<img id="menu1" src="imagenes/comprasVarias2.jpg">
+									<img id="menu1" src="../imagenes/comprasVarias2.jpg">
 								</a>
 								<label id="popup4">COMPRA REGALOS</label>
 							</div>
@@ -121,7 +131,7 @@
 					</tr>
 				</table>
 				<a href="#">
-					<img id="cerrarMenu" src="imagenes/cerrar.png">
+					<img id="cerrarMenu" src="../imagenes/cerrar.png">
 				</a>
 			</div>
 		</div>
@@ -131,34 +141,34 @@
 		<div id="formNewCliente" class="panel">
 			<div class="content">
 				<h2>Registro Nuevo Cliente</h2>
-				  <form id="clte" method="post" action="control/newCliente.php">
+				  <form action="" id="clte">
 				  	<table class="table table-sm table-borderless table-responsive-sm" id="tablaClientes">
-						<tr><td><input class="form-control" aria-label="Small" type="text" name="rut" placeholder="Rut ej:123457890"></td></tr>
-						<tr><td><input class="form-control" type="text" name="nombre" placeholder="Nombre"></td></tr>
-						<tr><td><input class="form-control" type="text" name="apellido" placeholder="Apellido"></td></tr>
-						<tr><td><input class="form-control" type="text" name="mail" placeholder="Correo electrónico"></td></tr>
-						<tr><td><input class="form-control" type="text" name="fono" placeholder="Telefóno"></td></tr>						
-
-						<tr><td><select class="form-control" name="region">
-							<option>Seleccione Región</option>
-							<option value="Metrolitana">Metropolitana de santiago</option>
-						</select></td></tr>								
-						
-						<tr><td><select class="form-control" name="comunas">
-							<option>Selecciones Comuna</option>
-							<option value="Cerrillos">Cerrillos</option>												
-							<option value="Estación Central">Estación Central</option>
-							<option value="Maipu">Maipu</option>
-							<option value="Peñalolen">Peñalolen</option>
-							<option value="Providencia">Providencia</option>
-							<option value="Vitacura">Vitacura</option>
-							<option value="Las Condes">Las Condes</option>	
-						</select></td></tr>	
-
-
-						<tr><td><input class="form-control" type="text" name="direccion" placeholder="Direccion"></td></tr>
-						<tr><td><input class="form-control" type="password" name="pass" placeholder="Clave"></td></tr>
-						<tr><td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td></tr>
+						<tr>
+							<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="" name="" placeholder="Nombre"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="" name="" placeholder="Apellido"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="" name="" placeholder="Correo electrónico"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="" name="" placeholder="Telefóno"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="password" name="" placeholder="Clave"></td>
+						</tr>
+						<tr>
+							<td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td>
+				  		</tr>
+						<tr>
+							<td>									
+								<button id="btnGoogle" type="button" name="button" class="g-signin2" data-onsuccess="onSignIn" ></button>
+							</td>
+						</tr>
 				  	</table>
 				  </form>
 				</div>
@@ -169,8 +179,8 @@
 		<!-- Registro socio -->
 		<div id="newPart" class="panel">
 			<div class="content">
-			<h2>Nuevo Socio</h2>				
-			  <form action="#" id="newSocio">
+			<h2>Nuevo Socio Partner</h2>				
+			  <form action="#">
 			  	<table class="table table-borderless table-sm" id="tablaClientes">
 					<tr>
 						<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
@@ -210,8 +220,13 @@
 						<td><input class="form-control" type="password" name="" placeholder="Clave"></td>
 					</tr>
 					<tr>
-						<td><input type="submit" class="btn btn-primary btn-sm active" value="Registrar"></td>
-			  		</tr>					
+						<td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td>
+			  		</tr>
+					<tr>
+						<td>									
+							<button id="btnGoogle" type="button" name="button" class="g-signin2" data-onsuccess="onSignIn" ></button>
+						</td>
+					</tr>
 			  	</table>
 			  </form>				
 			</div>
@@ -245,7 +260,7 @@
 								  <div class="input-group-prepend">
 								    <span class="form-control">Rut</span>
 								  </div>
-									<input type="text" class="form-control" name="" id="" maxlength="8" placeholder="ejemplo: 123456789" required/>
+									<input type="text" class="form-control" name="" id="" maxlength="8" placeholder="ejemplo: 12345678" required/>
 								</div>
 				  			</td>
 				  			<td>
@@ -254,23 +269,23 @@
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control" name="" placeholder="Nombre" required/>
+				  				<input type="text" class="form-control" name="" id="" placeholder="Nombre" required/>
 				  			</td>
 				  			<td>
-				  				<input type="text" class="form-control" name="" maxlength="4" placeholder="Año de Vehículo" required/>
+				  				<input type="text" class="form-control" name="" id="" maxlength="4" placeholder="Año de Vehículo" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control" name="" placeholder="Apellido" required/>
+				  				<input type="text" class="form-control" name="" id="" placeholder="Apellido" required/>
 				  			</td>
 				  			<td >
-				  				<input type="text" class="form-control" name=""placeholder="Marca de auto" required/>
+				  				<input type="text" class="form-control" name="" id="" placeholder="Marca de auto" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control" name="" placeholder="Dirección" required/>
+				  				<input type="text" class="form-control" name="" id="" placeholder="Dirección" required/>
 				  			</td>
 				  			<td>
 								<div class="container">
@@ -308,11 +323,11 @@
 				  </form>
 
 				<a href="#tramite" id="btnvolver">
-					<img id="volverrt" src="imagenes/volver.png">
+					<img id="volverrt" src="../imagenes/volver.png">
 				</a>
 
 				<a href="#" id="btnvolver">
-					<img id="cerrar" src="imagenes/cerrar.png">
+					<img id="cerrar" src="../imagenes/cerrar.png">
 				</a>
 			</div>
 		</div>
@@ -334,33 +349,33 @@
 									  <div class="input-group-prepend">
 									    <span class="form-control">Rut</span>
 									  </div>
-										<input type="text" class="form-control" name=""  maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
+										<input type="text" class="form-control" name="rutCli" id="" maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
 									</div>
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name=""  placeholder="Nombre" required="">
+					  				<input type="text" class="form-control" name="nombreCli" id="" placeholder="Nombre" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Apellido" required="">
+					  				<input type="text" class="form-control" name="apellidoCli" id="" placeholder="Apellido" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Dirección" required="">
+					  				<input type="text" class="form-control" name="DirecciónCli" id="" placeholder="Dirección" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Telefóno" required="">
+					  				<input type="text" class="form-control" name="telefonoCli" id="" placeholder="Telefóno" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name=""  placeholder="Correo electrónico" required="">
+					  				<input type="text" class="form-control" name="emailCli" id="" placeholder="Correo electrónico" required="">
 					  			</td>
 					  		</tr>
 					  	</tbody>
@@ -376,33 +391,33 @@
 									  <div class="input-group-prepend">
 									    <span class="form-control">Rut</span>
 									  </div>
-										<input type="text" class="form-control" name="" maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
+										<input type="text" class="form-control" name="" id="" maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
 									</div>
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Nombre" required="">
+					  				<input type="text" class="form-control" name="" id="" placeholder="Nombre" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Apellido" required="">
+					  				<input type="text" class="form-control" name="" id="" placeholder="Apellido" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Dirección" required="">
+					  				<input type="text" class="form-control" name="" id="" placeholder="Dirección" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Telefóno" required="">
+					  				<input type="text" class="form-control" name="" id="" placeholder="Telefóno" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Correo electrónico" required="">
+					  				<input type="text" class="form-control" name="" id="" placeholder="Correo electrónico" required="">
 					  			</td>
 					  		</tr>
 					  	</tbody>
@@ -428,13 +443,13 @@
 				  			<label id="subtitle">¿Cuanto Mide?</label>
 				  		</td>
 				  		<td>
-				  			<input type="text" class="form-control" placeholder="Largo en cm.">
+				  			<input type="text" class="form-control" id="" placeholder="Largo en cm.">
 				  		</td>
 				  		<td>
-				  			<input type="text" class="form-control" placeholder="Ancho en cm.">
+				  			<input type="text" class="form-control" id="" placeholder="Ancho en cm.">
 				  		</td>
 				  		<td>
-				  			<input type="text" class="form-control" placeholder="Profundidad en cm.">
+				  			<input type="text" class="form-control" id="" placeholder="Profundidad en cm.">
 				  		</td>
 				  	</tr>
 				  </table>
@@ -443,10 +458,10 @@
 	  			  </center>
 				</div>
 				<a href="#tramite" id="btnvolver">
-					<img id="volverrtEE" src="imagenes/volver.png">
+					<img id="volverrtEE" src="../imagenes/volver.png">
 				</a>
 				<a href="#">
-						<img id="cerrarMenu" src="imagenes/cerrar.png">
+						<img id="cerrarMenu" src="../imagenes/cerrar.png"">
 				</a>
 			</div>
 		</div>
@@ -459,10 +474,10 @@
 
 				<div class="" id="galeria">
 					<div id="galery">
-						<img id="im" src="Productos/canasta1.png">
+						<img id="im" src="../Productos/canasta1.png">
 					</div>
 					<div id="galery">
-						<img id="im2" src="Productos/canasta1.jpeg">
+						<img id="im2" src="../Productos/canasta1.jpeg">
 					</div>
 					<div id="galery">
 						<button class="btn btn-warning"><strong>$11.990</strong></button>
@@ -471,10 +486,10 @@
 
 				<div class="" id="galeria">
 					<div id="galery">
-						<img id="im" src="Productos/canasta2.png">
+						<img id="im" src="../Productos/canasta2.png">
 					</div>
 					<div id="galery">
-						<img id="im3" src="Productos/canasta2.jpeg">
+						<img id="im3" src="../Productos/canasta2.jpeg">
 					</div>
 					<div id="galery">
 						<button class="btn btn-warning"><strong>$18.990</strong></button>
@@ -483,10 +498,10 @@
 
 				<div class="" id="galeria">
 					<div id="galery">
-						<img id="im" src="Productos/canasta3.png">
+						<img id="im" src="../Productos/canasta3.png">
 					</div>
 					<div id="galery">
-						<img id="im4" src="Productos/canasta3.jpeg">
+						<img id="im4" src="../Productos/canasta3.jpeg">
 					</div>
 					<div id="galery">
 						<button class="btn btn-warning"><strong>$12.500</strong></button>
@@ -495,10 +510,10 @@
 
 				<div class="" id="galeria">
 					<div id="galery">
-						<img id="im5" src="Productos/italiano_opt.jpg">
+						<img id="im5" src="../Productos/italiano_opt.jpg">
 					</div>
 					<div id="galery">
-						<img id="im6" src="Productos/italiano.jpeg">
+						<img id="im6" src="../Productos/italiano.jpeg">
 					</div>
 					<div id="galery">
 						<button class="btn btn-warning"><strong>$7.500</strong></button>
@@ -507,10 +522,10 @@
 
 			</div>
 			<a href="#tramite" id="btnvolver">
-					<img id="volverrtEE" src="imagenes/volver.png">
+					<img id="volverrtEE" src="../imagenes/volver.png">
 			</a>
 			<a href="#">
-					<img id="cerrarMenu" src="imagenes/cerrar.png">
+					<img id="cerrarMenu" src="../imagenes/cerrar.png"">
 			</a>
 		</div>
 		<!--/Menu compra canastas -->
@@ -519,16 +534,19 @@
 		<div id="comprasVarias" class="panel">
 			<div class="content">
 				<h2>Compras Regalos u otros</h2>
-			
+
+				
 				
 			</div>
 			<a href="#tramite" id="btnvolver">
-					<img id="volverrtCR" src="imagenes/volver.png">
+					<img id="volverrtCR" src="../imagenes/volver.png">
 				</a>
 			<a href="#">
-					<img id="cerrarMenu" src="imagenes/cerrar.png">
+					<img id="cerrarMenu" src="../imagenes/cerrar.png"">
 			</a>
 		</div>
-		<!--/Menu compra regalos -->	
+		<!--/Menu compra regalos -->
+
+	
 	</body>
 </html>

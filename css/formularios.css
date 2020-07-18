@@ -29,13 +29,23 @@
 }
 /*Formulario Registro de clientes*/
 #clte{
-    margin-top: 71px;
+    padding-top: 32px;
+    width: 70%;
+    height: 522px;
+    background-color: rgba(110, 105, 109, 0.58);
+    margin: 0 auto;
+}
+#newSocio{
+	padding-top: 12px;
+	width: 70%;
+	height: 522px;
+	background-color: rgba(110, 105, 109, 0.58);
+	margin: 0 auto;
 }
 #tablaClientes{
 	width: 50%;
-    margin: 0 auto;
+	margin: 0 auto;
 	text-align: center;
-    background-color: rgba(110, 105, 109, 0.58);
 }
 
 #btnGoogle{
