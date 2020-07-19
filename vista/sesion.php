@@ -43,11 +43,11 @@
 				</li>
 				<li>
 					<a id="new" href="#Mis_Compras">Mis Compras</a>
-					<img id="ico2" src="../imagenes/iconoCliente.png">
+					<img id="ico2" src="../imagenes/ventas.png" style="height: 56px;margin-left: 172px;margin-top: -75px;">
 				</li>
 				<li>
 					<a id="new" href="#Mis_Datos">Mis Datos</a>
-					<img id="ico3" src="../imagenes/iconoSocios.png">
+					<img id="ico3" src="../imagenes/misDatos.png" style="height: 51px;margin-top: -69px;">
 				</li>								
 			</ul>
 
@@ -61,14 +61,13 @@
 				    margin-bottom: -6px;
 				">
 					<tbody>
-						<tr>
-							<td>Bienvenido</td>
-							<td>
+						<tr><td colspan="2">Bienvenido</td></tr>
+						<tr><td>
 								<?php
-									echo $_SESSION['nombre']
+									echo $_SESSION['nombre'];									
 								?>							
 							</td>
-						</tr>
+						</tr>						
 					</tbody>
 				</table>
 				<input id="L" style="font-size: 23px;letter-spacing: 1.5px;" type="submit" class="btn btn-primary btn-sm active" name="cerrar" value="Cerrar Sesión">	
