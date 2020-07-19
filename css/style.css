@@ -199,11 +199,11 @@ body {
 }
 .panel:target{
 	margin-top: 2.3%;
-    margin-left: 18%;
-    width: 77%;
-    background: rgb(255, 255, 255, 0.65);
-    box-shadow: 1px 1px 1px 2px rgba(255, 170, 0, 1);
-    padding-top: 4.5%;
+	margin-left: 18%;
+	width: 77%;
+	background-color: rgba(255, 170, 0, 0.57);
+	box-shadow: 1px 1px 1px 2px rgba(255, 170, 0, 1);
+	padding-top: 4.5%;
 }
 
 #home:target ~ #header #navigation #serv,
@@ -275,13 +275,25 @@ body {
 	height: 75px;
 }
 
-#footer{
-    position: absolute;
-    bottom: 0px;
-    font-size: 12px;
-    width: 100%;
-    margin-left: 0%;
-    background: rgba(244, 246, 247);
-    vertical-align: center;
-    padding-left: 0px;
+#parrafo{text-align: justify;text-transform: initial;color: rgba(245, 245, 245, 1);text-shadow: 0px 2px 0px rgba(0,0, 0, 0.9);background-color: #00000052;font-weight: 600;width: 85%;height: 516px;padding: 39px;margin: 0 auto;font-size: 21px;}
+#tecnico{
+    height: 118px;
+    margin-top: -45px;
+}
+#wasa{
+    height: 66px;
+    float: right;
+    margin-top: 546px;
+    margin-right: 63px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 1);
+}
+#wasa:hover{
+    height: 75px;
+    float: right;
+    margin-top: 540px;
+    margin-right: 60px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 1);
+    transition: 0.5s;
 }

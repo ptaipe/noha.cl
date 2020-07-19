@@ -12,16 +12,18 @@
 		<link rel="stylesheet" type="text/css" href="css/tags.css"/>
 		<link rel="stylesheet" type="text/css" href="css/popup.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<link rel="stylesheet" type="text/css" href="css/styleMobile.css"/>
-		
+		<link rel="stylesheet" type="text/css" href="css/styleMobile.css"/>		
 		<link rel="stylesheet" type="text/css" href="css/formularios.css"/>
 		<link rel="stylesheet" type="text/css" href="css/productos.css"/>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
-
-		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1/dist/css/bootstrap.min.css">
-
-		
+		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1/dist/css/bootstrap.min.css">		
 		<script src="js/bodySlider.js"></script>
+
+		<script>
+		function abrir(url) {
+		open(url,'','top=300,left=300,width=300,height=300') ;
+		}
+		</script>
 		
 
 	</head>
@@ -89,7 +91,7 @@
 								<a href="#revisiónTec" >
 									<img id="menu2" src="imagenes/menuRevison.jpg" >
 								</a>
-								<label id="popup1">revision TECNICA</label>
+								<label id="popup1">revision tecnica</label>
 							</div>
 						</td>
 						<td>
@@ -162,6 +164,7 @@
 				  	</table>
 				  </form>
 				</div>
+				<a href="#"><img id="cerrarMenu" src="imagenes/cerrar.png"></a>
 			</div>
 		</div>
 		<!--/Registro de clientes -->
@@ -169,52 +172,53 @@
 		<!-- Registro socio -->
 		<div id="newPart" class="panel">
 			<div class="content">
-			<h2>Nuevo Socio</h2>				
-			  <form action="#" id="newSocio">
-			  	<table class="table table-borderless table-sm" id="tablaClientes">
-					<tr>
-						<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="" name="" placeholder="Nombre"></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="" name="" placeholder="Apellido"></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="" name="" placeholder="Correo electrónico"></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="" name="" placeholder="Telefóno"></td>
-					</tr>
-					<tr>
-						<td>
-							<select class="form-control">
-								<option>Tipo de vehículo</option>
-								<option>Auto movil</option>
-								<option>Motocicleta</option>
-								<option>Bicicleta</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="" name="" placeholder="Patente"></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="" name="" placeholder="Modelo"></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="date" name="" ></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="password" name="" placeholder="Clave"></td>
-					</tr>
-					<tr>
-						<td><input type="submit" class="btn btn-primary btn-sm active" value="Registrar"></td>
-			  		</tr>					
-			  	</table>
-			  </form>				
+				<h2>Nuevo Socio</h2>				
+				  <form action="#" id="newSocio">
+				  	<table class="table table-borderless table-sm" id="tablaClientes">
+						<tr>
+							<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="" name="" placeholder="Nombre"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="" name="" placeholder="Apellido"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="" name="" placeholder="Correo electrónico"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="" name="" placeholder="Telefóno"></td>
+						</tr>
+						<tr>
+							<td>
+								<select class="form-control">
+									<option>Tipo de vehículo</option>
+									<option>Auto movil</option>
+									<option>Motocicleta</option>
+									<option>Bicicleta</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="" name="" placeholder="Patente"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="" name="" placeholder="Modelo"></td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="date" name="" ></td>
+						</tr>
+						<tr>
+							<td><input class="form-control" type="password" name="" placeholder="Clave"></td>
+						</tr>
+						<tr>
+							<td><input type="submit" class="btn btn-primary btn-sm active" value="Registrar"></td>
+				  		</tr>					
+				  	</table>
+				  </form>				
 			</div>
+			<a href="#"><img id="cerrarMenu" src="imagenes/cerrar.png"></a>
 		</div>
 		<!-- /Registro Socio -->
 
@@ -222,10 +226,26 @@
 		<div id="servicio" class="panel">
 			<div  class="content">
 				<h2>NoHa</h2>
-				<p>
-					En la actualidad las personas no disponen de tanto tiempo, ya que, están atados a un trabajo muy demandante o después del trabajo van a sus estudios superiores durante la tarde. Este problema de cotidianidad afecta la vida familiar de las personas y los tiempos de ocio que les gustaría tener. Además este problema de falta de tiempo genera que las personas soliciten permisos a sus trabajos para realizar estos trámites sencillos, generando un inconveniente para las mismas personas que las solicitan.  También hay que señalar que al realizar todas estas cotidianidades generan una mala experiencia o se suele vivir malos ratos, ya que la fila en las sucursales de pagos, supermercados, tiendas para comprar regalos, realizar la revisión técnica, llevar a lavar el auto o realizar trámites en el registro civil, son demasiados largas y lentas.
-				</p>
+				<div id="parrafo">
+					<p>
+						Actualmente las personas no disponen de tanto tiempo, ya que están atados a un trabajo muy demandante, el cual no les permite realizar actividades familiares. Este problema afecta la vida familiar de las personas y los tiempos de ocio que les gustaría tener. Sin embargo, la falta de tiempo genera que las personas soliciten permisos a sus trabajos para realizar estos trámites sencillos, generando un inconveniente para las mismas personas que las solicitan. También hay que señalar que al realizar todas estas cotidianidades generan una mala experiencia o se suele vivir malos ratos, ya que en la fila de los supermercados suelen sen largas, en ocasiones hay mucha gente en la feria el cual es difícil caminar entre tanta gente o realizar un regalo a un ser querido y no disponer del tiempo para comprarlo, realizar la revisión técnica en ocasiones es un tedio, ya que el tiempo de espera es demasiado y generalmente todo demasiado tiempo realizarlo.
+					</p>
+					<table class="table table-borderless table-sm" style="
+					    width: 53%;					    
+					    margin: 0 auto;
+					    text-align: center;
+					"> 
+						<tr>
+							<td><p style="margin-top: 17px;color: rgba(245, 245, 245, 1);font-style: oblique;
+								">Consultas o reclamos aquí ---></p></td>
+							<td>
+								<a href="mailto:contacto@noha.cl"><img id="tecnico" src="imagenes/atencion.png"></a>
+							</td>							
+						</tr>	
+					</table>
+				</div>
 			</div>
+			<a href="#"><img id="cerrarMenu" src="imagenes/cerrar.png"></a>
 		</div>
 		<!-- /Nuestro Servicio -->
 
@@ -529,6 +549,11 @@
 					<img id="cerrarMenu" src="imagenes/cerrar.png">
 			</a>
 		</div>
-		<!--/Menu compra regalos -->	
+		<!--/Menu compra regalos -->
+
+
+		<a href="https://api.whatsapp.com/send?phone=56987549928" target="_blank"><img id="wasa" src="imagenes/Wasa.png"></a>	
 	</body>
+	<script>
+
 </html>

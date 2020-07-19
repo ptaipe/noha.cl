@@ -32,14 +32,13 @@
     padding-top: 32px;
     width: 70%;
     height: 522px;
-    background-color: rgba(110, 105, 109, 0.58);
     margin: 0 auto;
 }
 #newSocio{
 	padding-top: 12px;
 	width: 70%;
 	height: 522px;
-	background-color: rgba(110, 105, 109, 0.58);
+	/* background-color: rgba(110, 105, 109, 0.58); */
 	margin: 0 auto;
 }
 #tablaClientes{

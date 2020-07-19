@@ -31,15 +31,8 @@
 
 		<link rel="stylesheet" type="text/css" href="../bootstrap-4.3.1/dist/css/bootstrap.min.css">
 
-		
-		<script src="../js/bodySlider2.js"></script>
-
 	</head>
-	<body background="../imagenes/fondo6.jpg">
-		<div id="precarga">
-			<!--precarga de backgrounds-->
-		</div>
-
+	<body >		
 			<!-- menu de navegacion -->
 		<div id="header">
 			<h1>Nosotros lo hacemos por ti</h1>
@@ -49,17 +42,13 @@
 					<img id="ico" src="../imagenes/servicios.png">
 				</li>
 				<li>
-					<a id="new" href="#formNewCliente">Registro Cliente</a>
+					<a id="new" href="#Mis_Compras">Mis Compras</a>
 					<img id="ico2" src="../imagenes/iconoCliente.png">
 				</li>
 				<li>
-					<a id="new" href="#newPart">Registro Socio</a>
+					<a id="new" href="#Mis_Datos">Mis Datos</a>
 					<img id="ico3" src="../imagenes/iconoSocios.png">
-				</li>
-				<li>
-					<a id="serv" href="#servicio">Quienes Somos</a>
-					<img id="ico4" src="../imagenes/somos.png">
-				</li>				
+				</li>								
 			</ul>
 
 
@@ -85,8 +74,6 @@
 				<input id="L" style="font-size: 23px;letter-spacing: 1.5px;" type="submit" class="btn btn-primary btn-sm active" name="cerrar" value="Cerrar Sesión">	
 			</form>
 
-
-			
 		</div>
 
 		<!-- Menu Servicios -->
@@ -138,37 +125,12 @@
 		<!-- /Menu Servicios -->
 
 		<!--Registro de clientes -->
-		<div id="formNewCliente" class="panel">
+		<div id="Mis_Compras" class="panel">
 			<div class="content">
-				<h2>Registro Nuevo Cliente</h2>
+				<h2>Mis Compras</h2>
 				  <form action="" id="clte">
 				  	<table class="table table-sm table-borderless table-responsive-sm" id="tablaClientes">
-						<tr>
-							<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
-						</tr>
-						<tr>
-							<td><input class="form-control" type="" name="" placeholder="Nombre"></td>
-						</tr>
-						<tr>
-							<td><input class="form-control" type="" name="" placeholder="Apellido"></td>
-						</tr>
-						<tr>
-							<td><input class="form-control" type="" name="" placeholder="Correo electrónico"></td>
-						</tr>
-						<tr>
-							<td><input class="form-control" type="" name="" placeholder="Telefóno"></td>
-						</tr>
-						<tr>
-							<td><input class="form-control" type="password" name="" placeholder="Clave"></td>
-						</tr>
-						<tr>
-							<td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td>
-				  		</tr>
-						<tr>
-							<td>									
-								<button id="btnGoogle" type="button" name="button" class="g-signin2" data-onsuccess="onSignIn" ></button>
-							</td>
-						</tr>
+						
 				  	</table>
 				  </form>
 				</div>
@@ -177,72 +139,18 @@
 		<!--/Registro de clientes -->
 
 		<!-- Registro socio -->
-		<div id="newPart" class="panel">
+		<div id="Mis_Datos" class="panel">
 			<div class="content">
-			<h2>Nuevo Socio Partner</h2>				
-			  <form action="#">
+			<h2>Mis Datos</h2>				
+			  <form action="#" id="clte">
 			  	<table class="table table-borderless table-sm" id="tablaClientes">
-					<tr>
-						<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="" name="" placeholder="Nombre"></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="" name="" placeholder="Apellido"></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="" name="" placeholder="Correo electrónico"></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="" name="" placeholder="Telefóno"></td>
-					</tr>
-					<tr>
-						<td>
-							<select class="form-control">
-								<option>Tipo de vehículo</option>
-								<option>Auto movil</option>
-								<option>Motocicleta</option>
-								<option>Bicicleta</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="" name="" placeholder="Patente"></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="" name="" placeholder="Modelo"></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="date" name="" ></td>
-					</tr>
-					<tr>
-						<td><input class="form-control" type="password" name="" placeholder="Clave"></td>
-					</tr>
-					<tr>
-						<td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td>
-			  		</tr>
-					<tr>
-						<td>									
-							<button id="btnGoogle" type="button" name="button" class="g-signin2" data-onsuccess="onSignIn" ></button>
-						</td>
-					</tr>
+					
 			  	</table>
 			  </form>				
 			</div>
 		</div>
 		<!-- /Registro Socio -->
-
-		<!-- Nuestro Servicio -->
-		<div id="servicio" class="panel">
-			<div  class="content">
-				<h2>NoHa</h2>
-				<p>
-					En la actualidad las personas no disponen de tanto tiempo, ya que, están atados a un trabajo muy demandante o después del trabajo van a sus estudios superiores durante la tarde. Este problema de cotidianidad afecta la vida familiar de las personas y los tiempos de ocio que les gustaría tener. Además este problema de falta de tiempo genera que las personas soliciten permisos a sus trabajos para realizar estos trámites sencillos, generando un inconveniente para las mismas personas que las solicitan.  También hay que señalar que al realizar todas estas cotidianidades generan una mala experiencia o se suele vivir malos ratos, ya que la fila en las sucursales de pagos, supermercados, tiendas para comprar regalos, realizar la revisión técnica, llevar a lavar el auto o realizar trámites en el registro civil, son demasiados largas y lentas.
-				</p>
-			</div>
-		</div>
-		<!-- /Nuestro Servicio -->
+		
 
 		<!--Menu Revision Tecnica -->
 		<div id="revisiónTec" class="panel">
