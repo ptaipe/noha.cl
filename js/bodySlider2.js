@@ -1,6 +1,5 @@
-
 // arreglo de imagenes
-var fondos = ['../imagenes/fondo2.jpg','../imagenes/fondo5.jpg','../imagenes/revision.jpg','../imagenes/cajaenvios.jpg','../imagenes/comprassuper.jpg','../imagenes/envios.jpg','../imagenes/regalos.jpg'];
+var fondos = ['../imagenes/2s.jpg','../imagenes/3s.jpg','../imagenes/2.jpg','../imagenes/4s.jpg','../imagenes/5s.jpg','../imagenes/6s.jpg'];
 var fondo_actual = 0;
 
 // aqui hacemos la rotación
@@ -19,7 +18,7 @@ var CambiarFondo = function()
 	document.getElementById('precarga').style.backgroundImage =  'url('+fondos[precargar2]+ ')';
 }
 	//aqui defino el tiempo de cambios de imagenes 1000 = 1 segundo
-window.setInterval(CambiarFondo, 7987); 
+window.setInterval(CambiarFondo, 15000); 
 
 
 

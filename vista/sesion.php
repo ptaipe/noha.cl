@@ -1,12 +1,11 @@
-<?php 
+<?php
 	include ("../dataBase/conect.php");
-
 	session_start();
 
-	if (!$_SESSION)
-	{
-		header("Location: ../index.php");
-	}
+	if($_SESSION['usuario'] == null || $_SESSION['usuario'] ='') {
+	 	echo "No se puede ingresar de esta manera";	
+	 	die();
+	 } 	
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -31,28 +30,34 @@
 
 		<link rel="stylesheet" type="text/css" href="../bootstrap-4.3.1/dist/css/bootstrap.min.css">
 
+		<script src="../js/bodySlider2.js"></script>
+
 	</head>
-	<body >		
+	<body background="../imagenes/1s.jpg">
+		<div id="precarga">
+			<!--precarga de backgrounds-->
+		</div>
+
 			<!-- menu de navegacion -->
 		<div id="header">
 			<h1>Nosotros lo hacemos por ti</h1>
 			<ul id="navigation">
 				<li>
 					<a id="tram" href="#tramite">Servicios</a>
-					<img id="ico" src="../imagenes/servicios.png">
+					<img id="ico" src="../imagenes/ventas.png">
 				</li>
 				<li>
 					<a id="new" href="#Mis_Compras">Mis Compras</a>
-					<img id="ico2" src="../imagenes/ventas.png" style="height: 56px;margin-left: 172px;margin-top: -75px;">
+					<img id="ico2" src="../imagenes/servicios.png" style="height: 50px;margin-left: 170px;margin-top: -70px;">
 				</li>
 				<li>
 					<a id="new" href="#Mis_Datos">Mis Datos</a>
-					<img id="ico3" src="../imagenes/misDatos.png" style="height: 51px;margin-top: -69px;">
+					<img id="ico3" src="../imagenes/misDatos.png" style="height: 50px; width: 44px;margin-top: -69px;margin-left: 189px;">
 				</li>								
 			</ul>
 
 
-			<form action="../index.php" method="post">
+			<form action="../control/cerrar.php" method="post">
 				<table class="table table-sm table-hover table-dark table-borderless" style="
 				    background-color: rgba(255, 170, 0);
 				    text-align: center;

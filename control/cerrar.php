@@ -1,13 +1,13 @@
 <?php 	
 	session_start();
 
-	if ($_SESSION['nombre'])
-	{		
-		session_destroy();
-		header("Location: ../index.php");
-		
-	}else{
+	$varsesion = $_SESSION['nombre'];
+	if($varsesion == null || $varsesion ='') {
+	 	echo "No se puede ingresar de esta manera";	 	
+	 	die();
+	 } 
 
-		header("Location: ../index.php");
-	}
+	 session_destroy();
+	 header("Location: ../index.php")
+
 ?>

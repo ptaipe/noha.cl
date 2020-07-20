@@ -1,5 +1,7 @@
 <?php
- 	include ("../dataBase/conect.php");
+	session_start();
+
+	include ("../dataBase/conect.php");
 
  	if ($con->connect_error)
 	{
@@ -10,8 +12,7 @@
 	$pass = $_POST['pass'];	
 
 	if (isset($user))
-	{
-		session_start();
+	{		
 
 		$sql = "SELECT * FROM Usuario WHERE email='$user' AND clave='$pass'";
 		$result=$con->query($sql);

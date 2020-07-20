@@ -23,11 +23,10 @@
 		function abrir(url) {
 		open(url,'','top=300,left=300,width=300,height=300') ;
 		}
-		</script>
-		
+		</script>		
 
 	</head>
-	<body background="imagenes/fondo6.jpg">
+	<body background="imagenes/f1.jpg">
 		<div id="precarga">
 			<!--precarga de backgrounds-->
 		</div>
@@ -63,7 +62,7 @@
 			<ul id="navigation">
 				<li>
 					<a id="tram" href="#tramite">Servicios</a>
-					<img id="ico" src="imagenes/servicios.png">
+					<img id="ico" src="imagenes/ventas.png">
 				</li>
 				<li>
 					<a id="new" href="#formNewCliente">Registro Cliente</a>
