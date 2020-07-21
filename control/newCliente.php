@@ -16,8 +16,7 @@
 	$direccion = $_POST['direccion'];
 	$pass = $_POST['pass'];
 
-	if (isset($rut))
-	{
+	if (isset($rut))	{
 		$sql = "SELECT * FROM Usuario";
 		$result=$con->query($sql);
 		$rows = $result->fetch_array(MYSQLI_ASSOC);
