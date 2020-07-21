@@ -58,7 +58,7 @@
 
 			<!-- menu de navegacion -->
 		<div id="header">
-			<h1>Nosotros lo hacemos por ti</h1>
+			<h1 style="padding: 0px;"><img src="imagenes/icono3.png" style="height: 130px;"></h1>
 			<ul id="navigation">
 				<li>
 					<a id="tram" href="#tramite">Servicios</a>
@@ -138,7 +138,7 @@
 						<tr><td><input class="form-control" type="text" name="nombre" placeholder="Nombre"></td></tr>
 						<tr><td><input class="form-control" type="text" name="apellido" placeholder="Apellido"></td></tr>
 						<tr><td><input class="form-control" type="text" name="mail" placeholder="Correo electrónico"></td></tr>
-						<tr><td><input class="form-control" type="text" name="fono" placeholder="Telefóno"></td></tr>						
+						<tr><td><input class="form-control" type="text" name="fono" placeholder="Telefóno"></td></tr>				
 
 						<tr><td><select class="form-control" name="region">
 							<option>Seleccione Región</option>
@@ -172,47 +172,65 @@
 		<div id="newPart" class="panel">
 			<div class="content">
 				<h2>Nuevo Socio</h2>				
-				  <form action="#" id="newSocio">
+				  <form id="newSocio" method="post" action="control/newSocio.php">
 				  	<table class="table table-borderless table-sm" id="tablaClientes">
 						<tr>
-							<td><input class="form-control" aria-label="Small" type="" name="" placeholder="Rut ej:123457890"></td>
+							<td colspan="2"><input class="form-control" aria-label="Small" type="text" name="rut" placeholder="Rut ej:123457890"></td>
 						</tr>
 						<tr>
-							<td><input class="form-control" type="" name="" placeholder="Nombre"></td>
+							<td><input class="form-control" type="text" name="nombre" placeholder="Nombre"></td>
+							<td><input class="form-control" type="text" name="apellido" placeholder="Apellido"></td>
 						</tr>
 						<tr>
-							<td><input class="form-control" type="" name="" placeholder="Apellido"></td>
-						</tr>
-						<tr>
-							<td><input class="form-control" type="" name="" placeholder="Correo electrónico"></td>
-						</tr>
-						<tr>
-							<td><input class="form-control" type="" name="" placeholder="Telefóno"></td>
+							<td><input class="form-control" type="text" name="email" placeholder="Correo electrónico"></td>
+							<td><input class="form-control" type="text" name="fono" placeholder="Telefóno"></td>
 						</tr>
 						<tr>
 							<td>
-								<select class="form-control">
-									<option>Tipo de vehículo</option>
-									<option>Auto movil</option>
-									<option>Motocicleta</option>
-									<option>Bicicleta</option>
+								<select class="form-control" name="region">
+									<option>Seleccione Región</option>
+									<option value="Metrolitana">Metropolitana de santiago</option>
+								</select>
+							</td>
+							<td>
+								<select class="form-control" name="comunas">
+									<option>Selecciones Comuna</option>
+									<option value="Cerrillos">Cerrillos</option>
+									<option value="Estación Central">Estación Central</option>
+									<option value="Maipu">Maipu</option>
+									<option value="Peñalolen">Peñalolen</option>
+									<option value="Providencia">Providencia</option>
+									<option value="Vitacura">Vitacura</option>
+									<option value="Las Condes">Las Condes</option>	
 								</select>
 							</td>
 						</tr>
 						<tr>
-							<td><input class="form-control" type="" name="" placeholder="Patente"></td>
-						</tr>
+							<td>
+								<input class="form-control" type="text" name="direccion" placeholder="Direccion">
+							</td>
+							<td>
+								<select class="form-control" name="auto">
+									<option>Tipo de vehículo</option>
+									<option value="auto">Auto movil</option>
+									<option value="moto">Motocicleta</option>
+									<option value="bicicleta">Bicicleta</option>
+								</select>
+							</td>
+						</tr>						
 						<tr>
-							<td><input class="form-control" type="" name="" placeholder="Modelo"></td>
-						</tr>
+							<td><input class="form-control" type="" name="patente" placeholder="Patente"></td>
+							<td><input class="form-control" type="" name="modelo" placeholder="Modelo"></td>
+						</tr>						
 						<tr>
-							<td><input class="form-control" type="date" name="" ></td>
+							<td>
+								<p style="color: white;font-weight: 600;text-shadow: 2px 2px 2px rgba(0,0, 0, 0.9);margin-bottom: 3px;">año Fabricacion</p>
+								<input class="form-control" type="date" name="year">
+							</td>
+							<td><input class="form-control" type="password" name="pass" placeholder="Clave" style="margin-top: 26px;"></td>
 						</tr>
-						<tr>
-							<td><input class="form-control" type="password" name="" placeholder="Clave"></td>
-						</tr>
-						<tr>
-							<td><input type="submit" class="btn btn-primary btn-sm active" value="Registrar"></td>
+						<tr>													
+							<td colspan="2"><input type="submit" class="btn btn-primary btn-sm active" value="Registrar"></td>
 				  		</tr>					
 				  	</table>
 				  </form>				
@@ -230,7 +248,7 @@
 						Actualmente las personas no disponen de tanto tiempo, ya que están atados a un trabajo muy demandante, el cual no les permite realizar actividades familiares. Este problema afecta la vida familiar de las personas y los tiempos de ocio que les gustaría tener. Sin embargo, la falta de tiempo genera que las personas soliciten permisos a sus trabajos para realizar estos trámites sencillos, generando un inconveniente para las mismas personas que las solicitan. También hay que señalar que al realizar todas estas cotidianidades generan una mala experiencia o se suele vivir malos ratos, ya que en la fila de los supermercados suelen sen largas, en ocasiones hay mucha gente en la feria el cual es difícil caminar entre tanta gente o realizar un regalo a un ser querido y no disponer del tiempo para comprarlo, realizar la revisión técnica en ocasiones es un tedio, ya que el tiempo de espera es demasiado y generalmente todo demasiado tiempo realizarlo.
 					</p>
 					<table class="table table-borderless table-sm" style="
-					    width: 53%;					    
+					    width: 70%;					    
 					    margin: 0 auto;
 					    text-align: center;
 					"> 
@@ -239,12 +257,16 @@
 								">Consultas o reclamos aquí ---></p></td>
 							<td>
 								<a href="mailto:contacto@noha.cl"><img id="tecnico" src="imagenes/atencion.png"></a>
-							</td>							
+							</td>	
+							<td>
+								<a href="https://api.whatsapp.com/send?phone=56987549928" target="_blank"><img id="wasa" src="imagenes/Wasa.png"></a>
+							</td>						
 						</tr>	
 					</table>
 				</div>
 			</div>
 			<a href="#"><img id="cerrarMenu" src="imagenes/cerrar.png"></a>
+
 		</div>
 		<!-- /Nuestro Servicio -->
 
@@ -264,32 +286,32 @@
 								  <div class="input-group-prepend">
 								    <span class="form-control">Rut</span>
 								  </div>
-									<input type="text" class="form-control" name="" id="" maxlength="8" placeholder="ejemplo: 123456789" required/>
+									<input type="text" class="form-control" maxlength="8" placeholder="ejemplo: 123456789" required/>
 								</div>
 				  			</td>
 				  			<td>
-				  				<input type="text" class="form-control" name="" id="" maxlength="6" placeholder="Patente sin guión ej: ffgg52" required/>
+				  				<input type="text" class="form-control" maxlength="6" placeholder="Patente sin guión ej: ffgg52" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control" name="" placeholder="Nombre" required/>
+				  				<input type="text" class="form-control" placeholder="Nombre" required/>
 				  			</td>
 				  			<td>
-				  				<input type="text" class="form-control" name="" maxlength="4" placeholder="Año de Vehículo" required/>
+				  				<input type="text" class="form-control" maxlength="4" placeholder="Año de Vehículo" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control" name="" placeholder="Apellido" required/>
+				  				<input type="text" class="form-control" placeholder="Apellido" required/>
 				  			</td>
 				  			<td >
-				  				<input type="text" class="form-control" name=""placeholder="Marca de auto" required/>
-				  			</td>
+				  				<input type="text" class="form-control" placeholder="Marca de auto" required/>
+				  			</td><img src="">
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control" name="" placeholder="Dirección" required/>
+				  				<input type="text" class="form-control" placeholder="Dirección" required/>
 				  			</td>
 				  			<td>
 								<div class="container">
@@ -302,18 +324,18 @@
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control" name="" id="" placeholder="Telefóno" required/>
+				  				<input type="text" class="form-control" placeholder="Telefóno" required/>
 				  			</td>
 				  			<td>
-				  				<input type="text" class="form-control" name="" id="" placeholder="Planta de revisión técnica" required/>
+				  				<input type="text" class="form-control" placeholder="Planta de revisión técnica" required/>
 				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
-				  				<input type="text" class="form-control" name="" id="" placeholder="Correo electrónico" required/>
+				  				<input type="text" class="form-control"placeholder="Correo electrónico" required/>
 				  			</td>
 				  			<td>
-				  				<input type="date" class="form-control" name="" placeholder="Fecha Inicio">
+				  				<input type="date" class="form-control" placeholder="Fecha Inicio">
 				  			</td>
 				  		</tr>
 				  		<tr>
@@ -353,33 +375,33 @@
 									  <div class="input-group-prepend">
 									    <span class="form-control">Rut</span>
 									  </div>
-										<input type="text" class="form-control" name=""  maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
+										<input type="text" class="form-control"  maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
 									</div>
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name=""  placeholder="Nombre" required="">
+					  				<input type="text" class="form-control" placeholder="Nombre" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Apellido" required="">
+					  				<input type="text" class="form-control" placeholder="Apellido" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Dirección" required="">
+					  				<input type="text" class="form-control" placeholder="Dirección" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Telefóno" required="">
+					  				<input type="text" class="form-control" placeholder="Telefóno" required="">
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name=""  placeholder="Correo electrónico" required="">
+					  				<input type="text" class="form-control" placeholder="Correo electrónico" required="">
 					  			</td>
 					  		</tr>
 					  	</tbody>
@@ -395,33 +417,33 @@
 									  <div class="input-group-prepend">
 									    <span class="form-control">Rut</span>
 									  </div>
-										<input type="text" class="form-control" name="" maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
+										<input type="text" class="form-control"maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
 									</div>
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Nombre" required="">
+					  				<input type="text" class="form-control" placeholder="Nombre" >
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Apellido" required="">
+					  				<input type="text" class="form-control" placeholder="Apellido" >
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Dirección" required="">
+					  				<input type="text" class="form-control"placeholder="Dirección" >
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Telefóno" required="">
+					  				<input type="text" class="form-control" placeholder="Telefóno" >
 					  			</td>
 					  		</tr>
 					  		<tr>
 					  			<td>
-					  				<input type="text" class="form-control" name="" placeholder="Correo electrónico" required="">
+					  				<input type="text" class="form-control" placeholder="Correo electrónico">
 					  			</td>
 					  		</tr>
 					  	</tbody>
@@ -430,7 +452,7 @@
 				  	<tr>
 				  		<td><label id="subtitle">¿Cuanto Pesa?</label></td>
 
-				  		<td><input type="text" class="form-control" id="" placeholder="Kilogramos"></td>
+				  		<td><input type="text" class="form-control" placeholder="Kilogramos"></td>
 
 				  		<td colspan="3">
 				  			<select class="form-control">
@@ -549,9 +571,6 @@
 			</a>
 		</div>
 		<!--/Menu compra regalos -->
-
-
-		<a href="https://api.whatsapp.com/send?phone=56987549928" target="_blank"><img id="wasa" src="imagenes/Wasa.png"></a>	
 	</body>
 	<script>
 

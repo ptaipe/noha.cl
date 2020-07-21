@@ -40,7 +40,7 @@
 
 			<!-- menu de navegacion -->
 		<div id="header">
-			<h1>Nosotros lo hacemos por ti</h1>
+			<h1 style="padding: 0px;"><img src="../imagenes/icono3.png" style="height: 130px;"></h1>
 			<ul id="navigation">
 				<li>
 					<a id="tram" href="#tramite">Servicios</a>

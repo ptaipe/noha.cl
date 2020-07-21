@@ -18,15 +18,15 @@
 
 	if (isset($rut))
 	{
-		$sql = "SELECT * FROM Usuario WHERE rut='$rut' AND email='$email'";
+		$sql = "SELECT * FROM Usuario";
 		$result=$con->query($sql);
 		$rows = $result->fetch_array(MYSQLI_ASSOC);
 
-		if($rows['rut'] == $rut && $rows['email'] == $email)
+		if($rut == $rows['rut'] && $mail == $rows['email'])
 		{
 			echo'<script type="text/javascript">
 				    alert("Esta cuenta usuario ya existe");
-				    window.location.href="index.php#login";
+				    window.location.href="../index.php#login";
 				    </script>';
 		}else{
 			session_start();
@@ -37,26 +37,13 @@
 
 			if( $con->query($guardarCliente) ==TRUE)
 			{
-				$_SESSION['nombre'] = $rows['nombre'];
-
 				echo'<script type="text/javascript">
 				    alert("Felicidades su cuenta a sido creada);
 				    window.location.href="index.php#login";
 				    </script>';
 
-				header("Location: ../index.php#login");
-			}
-			
+				header("Location: ../index.php");
+			}			
 		} 
-
 	}
-
-
-
-
-
-	
-
-
-
 ?>
