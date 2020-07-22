@@ -1,6 +1,4 @@
 <?php
-	session_start();
-
 	include ("../dataBase/conect.php");
 
  	if ($con->connect_error)
@@ -13,14 +11,15 @@
 
 	if (isset($user))
 	{		
+		session_start();
 
 		$sql = "SELECT * FROM Usuario WHERE email='$user' AND clave='$pass'";
 		$result=$con->query($sql);
 		$rows = $result->fetch_array(MYSQLI_ASSOC);
 
-		if (!$rows['idUsuario'])
+		if (!$rows['email'])
 		{
-			header("Location: ../index.php#login");
+			header("Location: https://noha.cl/#login");
 		}else
 		{
 			if($rows['email'] == $user && $rows['clave'] == $pass)  
@@ -31,8 +30,7 @@
 			}
 			else{
 				echo'<script type="text/javascript">
-				    alert("usuario o clave incorrectos, intente nuevamente.");
-				    window.location.href="index.php#login";
+				    alert("usuario o clave incorrectos, intente nuevamente.");				  
 				    </script>';
 			}
 		}

@@ -2,10 +2,11 @@
 	include ("../dataBase/conect.php");
 	session_start();
 
-	if($_SESSION['usuario'] == null || $_SESSION['usuario'] ='') {
-	 	echo "No se puede ingresar de esta manera";	
-	 	die();
-	 } 	
+	if (!$_SESSION)
+	{
+		header("Location: https://noha.cl/");
+	}
+
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">

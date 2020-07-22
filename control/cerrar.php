@@ -1,13 +1,13 @@
 <?php 	
 	session_start();
 
-	$varsesion = $_SESSION['nombre'];
-	if($varsesion == null || $varsesion ='') {
-	 	echo "No se puede ingresar de esta manera";	 	
-	 	die();
-	 } 
-
-	 session_destroy();
-	 header("Location: ../index.php")
+	if ($_SESSION['nombre'])
+	{		
+		session_destroy();
+		header("Location: https://noha.cl/");
+		
+	}else{
+		header("Location: https://noha.cl/");
+	}
 
 ?>

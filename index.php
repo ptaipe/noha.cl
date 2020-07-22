@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
 	<head>
 		
-		<meta charset="UTF-8" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Cache-control" content="no-cache">	
+
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=no">
 
@@ -18,12 +20,7 @@
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1/dist/css/bootstrap.min.css">		
 		<script src="js/bodySlider.js"></script>
-
-		<script>
-		function abrir(url) {
-		open(url,'','top=300,left=300,width=300,height=300') ;
-		}
-		</script>		
+			
 
 	</head>
 	<body background="imagenes/f1.jpg">
@@ -134,11 +131,11 @@
 				<h2>Registro Nuevo Cliente</h2>
 				  <form id="clte" method="post" action="control/newCliente.php">
 				  	<table class="table table-sm table-borderless table-responsive-sm" id="tablaClientes">
-						<tr><td><input class="form-control" aria-label="Small" type="text" name="rut" placeholder="Rut ej:123457890"></td></tr>
-						<tr><td><input class="form-control" type="text" name="nombre" placeholder="Nombre"></td></tr>
-						<tr><td><input class="form-control" type="text" name="apellido" placeholder="Apellido"></td></tr>
-						<tr><td><input class="form-control" type="text" name="mail" placeholder="Correo electrónico"></td></tr>
-						<tr><td><input class="form-control" type="text" name="fono" placeholder="Telefóno"></td></tr>				
+						<tr><td><input class="form-control" aria-label="Small" type="text" name="rut" placeholder="Rut ej:123457890" required></td></tr>
+						<tr><td><input required class="form-control" type="text" name="nombre" placeholder="Nombre"></td></tr>
+						<tr><td><input required class="form-control" type="text" name="apellido" placeholder="Apellido"></td></tr>
+						<tr><td><input required class="form-control" type="text" name="mail" placeholder="Correo electrónico"></td></tr>
+						<tr><td><input required class="form-control" type="text" name="fono" placeholder="Telefóno"></td></tr>				
 
 						<tr><td><select class="form-control" name="region">
 							<option>Seleccione Región</option>
@@ -146,20 +143,30 @@
 						</select></td></tr>								
 						
 						<tr><td><select class="form-control" name="comunas">
-							<option>Selecciones Comuna</option>
+							<option>Seleccione Comuna</option>
 							<option value="Cerrillos">Cerrillos</option>												
 							<option value="Estación Central">Estación Central</option>
 							<option value="Maipu">Maipu</option>
-							<option value="Peñalolen">Peñalolen</option>
+							<option value="Penalolen">Penalolen</option>
 							<option value="Providencia">Providencia</option>
 							<option value="Vitacura">Vitacura</option>
 							<option value="Las Condes">Las Condes</option>	
 						</select></td></tr>	
 
 
-						<tr><td><input class="form-control" type="text" name="direccion" placeholder="Direccion"></td></tr>
-						<tr><td><input class="form-control" type="password" name="pass" placeholder="Clave"></td></tr>
-						<tr><td><input type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrar"></td></tr>
+						<tr><td><input required class="form-control" type="text" name="direccion" placeholder="Dirección"></td></tr>
+						<tr><td><input required class="form-control" type="password" name="pass" placeholder="Clave"></td></tr>
+						<tr><td><input required type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrarse" style="
+							    margin-top: 17px;
+							    font-size: 19px;
+							    width: 146px;
+							    height: 88px;
+							    background-color: white;
+							    color: black;
+							    font-weight: 600;
+							    border: outset;
+							    box-shadow: 0px 0px 8px 4px rgba(245, 245, 245, 1);
+							"></td></tr>
 				  	</table>
 				  </form>
 				</div>
@@ -175,30 +182,30 @@
 				  <form id="newSocio" method="post" action="control/newSocio.php">
 				  	<table class="table table-borderless table-sm" id="tablaClientes">
 						<tr>
-							<td colspan="2"><input class="form-control" aria-label="Small" type="text" name="rut" placeholder="Rut ej:123457890"></td>
+							<td colspan="2"><input name="rut" class="form-control" aria-label="Small" type="text" placeholder="Rut ej:123457890" required></td>
 						</tr>
 						<tr>
-							<td><input class="form-control" type="text" name="nombre" placeholder="Nombre"></td>
-							<td><input class="form-control" type="text" name="apellido" placeholder="Apellido"></td>
+							<td><input name="nombre" class="form-control" type="text" placeholder="Nombre" required></td>
+							<td><input name="apellido" class="form-control" type="text"  placeholder="Apellido" required></td>
 						</tr>
 						<tr>
-							<td><input class="form-control" type="text" name="email" placeholder="Correo electrónico"></td>
-							<td><input class="form-control" type="text" name="fono" placeholder="Telefóno"></td>
+							<td><input name="email" class="form-control" type="text" placeholder="Correo electrónico" required></td>
+							<td><input name="fono" class="form-control" type="text" placeholder="Telefóno" required></td>
 						</tr>
 						<tr>
 							<td>
-								<select class="form-control" name="region">
+								<select name="region" class="form-control">
 									<option>Seleccione Región</option>
 									<option value="Metrolitana">Metropolitana de santiago</option>
 								</select>
 							</td>
 							<td>
-								<select class="form-control" name="comunas">
-									<option>Selecciones Comuna</option>
+								<select name="comunas" class="form-control">
+									<option>Seleccione Comuna</option>
 									<option value="Cerrillos">Cerrillos</option>
 									<option value="Estación Central">Estación Central</option>
 									<option value="Maipu">Maipu</option>
-									<option value="Peñalolen">Peñalolen</option>
+									<option value="Penalolen">Penalolen</option>
 									<option value="Providencia">Providencia</option>
 									<option value="Vitacura">Vitacura</option>
 									<option value="Las Condes">Las Condes</option>	
@@ -207,10 +214,10 @@
 						</tr>
 						<tr>
 							<td>
-								<input class="form-control" type="text" name="direccion" placeholder="Direccion">
+								<input name="direccion" class="form-control" type="text" placeholder="Dirección" required>
 							</td>
 							<td>
-								<select class="form-control" name="auto">
+								<select name="auto" class="form-control">
 									<option>Tipo de vehículo</option>
 									<option value="auto">Auto movil</option>
 									<option value="moto">Motocicleta</option>
@@ -219,18 +226,28 @@
 							</td>
 						</tr>						
 						<tr>
-							<td><input class="form-control" type="" name="patente" placeholder="Patente"></td>
-							<td><input class="form-control" type="" name="modelo" placeholder="Modelo"></td>
+							<td><input name="patente" class="form-control" type="text" placeholder="Patente" required></td>
+							<td><input name="modelo" class="form-control" type="text" placeholder="Modelo" required></td>
 						</tr>						
 						<tr>
 							<td>
 								<p style="color: white;font-weight: 600;text-shadow: 2px 2px 2px rgba(0,0, 0, 0.9);margin-bottom: 3px;">año Fabricacion</p>
-								<input class="form-control" type="date" name="year">
+								<input name="year" class="form-control" type="date"  value="<?php echo date("Y-m-d");?>" required>
 							</td>
-							<td><input class="form-control" type="password" name="pass" placeholder="Clave" style="margin-top: 26px;"></td>
+							<td><input name="pass" class="form-control" type="password" placeholder="Clave" style="margin-top: 26px;"></td>
 						</tr>
 						<tr>													
-							<td colspan="2"><input type="submit" class="btn btn-primary btn-sm active" value="Registrar"></td>
+							<td colspan="2"><input type="submit" class="btn btn-primary btn-sm active" value="Registrarse" style="
+							    margin-top: 17px;
+							    font-size: 19px;
+							    width: 146px;
+							    height: 88px;
+							    background-color: white;
+							    color: black;
+							    font-weight: 600;
+							    border: outset;
+							    box-shadow: 0px 0px 8px 4px rgba(245, 245, 245, 1);
+							"></td>
 				  		</tr>					
 				  	</table>
 				  </form>				
@@ -245,7 +262,8 @@
 				<h2>NoHa</h2>
 				<div id="parrafo">
 					<p>
-						Actualmente las personas no disponen de tanto tiempo, ya que están atados a un trabajo muy demandante, el cual no les permite realizar actividades familiares. Este problema afecta la vida familiar de las personas y los tiempos de ocio que les gustaría tener. Sin embargo, la falta de tiempo genera que las personas soliciten permisos a sus trabajos para realizar estos trámites sencillos, generando un inconveniente para las mismas personas que las solicitan. También hay que señalar que al realizar todas estas cotidianidades generan una mala experiencia o se suele vivir malos ratos, ya que en la fila de los supermercados suelen sen largas, en ocasiones hay mucha gente en la feria el cual es difícil caminar entre tanta gente o realizar un regalo a un ser querido y no disponer del tiempo para comprarlo, realizar la revisión técnica en ocasiones es un tedio, ya que el tiempo de espera es demasiado y generalmente todo demasiado tiempo realizarlo.
+						Actualmente en los tiempos de hoy en día como personas no disponemos de tiempo ya que están atados a un trabajo muy demandante y a una pandemia corriendo riesgos de contagio, el cual no les permite realizar actividades familiares. Este problema afecta la vida de miles de familias disminuyendo los tiempos de ocio que les gustaría tener disfrutando junto a los suyos. Sin embargo, la falta de tiempo genera que las personas soliciten permisos a sus trabajos para realizar estos trámites sencillos, generando un inconveniente para las mismas personas que las solicitan, como también colocan en riesgo su salud ante el contagio de Covit 19. También hay que señalar que al realizar todas estas cotidianidades generan una mala experiencia o se suele vivir malos ratos y riesgos saliendo a la calle, en ocasiones hay mucha gente en la feria el cual es difícil caminar entre tanta gente o realizar un regalo a un ser querido y no disponer del tiempo para comprarlo, realizar la revisión técnica en ocasiones es muy tedioso, y los tiempos de espera son muy largos y muchas veces superan los horarios de atención.<br>
+						Estamos viviendo una contingencia donde le ofrecemos a nuestros clientes una mejor condición de vida junto a su familia y un resguardo a su salud ante cualquier riesgo de contagio.
 					</p>
 					<table class="table table-borderless table-sm" style="
 					    width: 70%;					    
@@ -456,11 +474,11 @@
 
 				  		<td colspan="3">
 				  			<select class="form-control">
-				  				<option>TIPO DE CAJA</option>
-				  				<option>CAJA CHICA</option>
-				  				<option>CAJA NORMAL</option>
-				  				<option>CAJA MEDIANA</option>
-				  				<option>CAJA GRANDE</option>
+				  				<option>Tipo de caja</option>
+				  				<option>Caja chica</option>
+				  				<option>Caja normal</option>
+				  				<option>Caja mediana</option>
+				  				<option>Caja grande</option>
 				  			</select>
 				  		</td>
 				  	</tr>
