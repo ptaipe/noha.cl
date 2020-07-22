@@ -29,7 +29,8 @@
 		    alert("Esta cuenta ya existe, intenta nuevamente o registrate nuevamente.");
 		    window.location.href="https://noha.cl/#formNewCliente";
 		    </script>';
-	}else{
+	}
+	else{
 		if ($con->query($guardarCliente) ==TRUE) {
 
 			echo'<script type="text/javascript">
@@ -37,8 +38,11 @@
 		    window.location.href="https://noha.cl/#login";
 		    </script>';			
 		}
-	}
-
-
-	
+		else{
+			echo '<script type="text/javascript">
+		    alert("UPS... Algo salio mal XD, revisa bien los \nque estas ingresando.");
+		    window.location.href="https://noha.cl";
+		    </script>';
+		}
+	}	
 ?>

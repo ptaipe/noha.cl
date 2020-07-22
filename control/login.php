@@ -30,7 +30,7 @@
 			}
 			else{
 				echo'<script type="text/javascript">
-				    alert("usuario o clave incorrectos, intente nuevamente.");				  
+				    alert("Usuario o clave incorrectos, intente nuevamente.");				  
 				    </script>';
 			}
 		}

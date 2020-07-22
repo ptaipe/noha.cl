@@ -20,11 +20,12 @@
 	$year = date($_POST['year']);
 	$pass = $_POST['pass'];
 
-	$consulta = "SELECT * FROM Socios WHERE rut='$rut' AND email='$mail'";
-	$result=$con->query($consulta);
+	$sql2 = "SELECT * FROM Socios WHERE rut='$rut' AND email='$mail'";
+	$result=$con->query($sql2);
 	$rows = $result->fetch_array(MYSQLI_ASSOC);
-
-	$nuevoSocio = "INSERT INTO Socios (rut,nombre,apellido,email,telefono,region,comuna,Direccion,vehiculo,patente, modelo,año,clave) VALUES ('$rut','$nombre','$apellido','$mail','$fono','$region','$comuna','$direccion','$auto','$patente','$modelo','$year', '$pass')";
+ 
+ 	$guardarSocio = "INSERT INTO Socios (rut,nombre,apellido,email,telefono,region,comuna,Direccion,vehiculo,patente,modelo,ano,clave)
+ 	VALUES ('$rut','$nombre','$apellido','$mail','$fono','$region','$comuna','$direccion','$auto','$patente','$modelo','$year','$pass')";
 
 	
 	if ($rut == $rows['rut'] && $mail == $rows['email']){
@@ -32,16 +33,17 @@
 		    alert("Esta cuenta de socio ya existe,\n intenta nuevamente o registrate nuevamente.");
 		    window.location.href="https://noha.cl/#newPart";
 		    </script>';
-	}else{
-		if( $con->query($nuevoSocio) == TRUE)
+	}
+	else{
+		if ($con->query($guardarSocio) ==TRUE)
 		{
-			echo'<script type="text/javascript">
+			echo '<script type="text/javascript">
 		    alert("Felicidades ahora eres unos \nde nuestros nuevos socios.");
-		    window.location.href="https://noha.cl";
+		    window.location.href="https://noha.cl/#newPart";
 		    </script>';
 		}else{
-			echo'<script type="text/javascript">
-		    alert("UPS... Algo salio mal XD, revisa bien los \nque estas ingresando.");
+			echo '<script type="text/javascript">
+		    alert("UPS... Algo salio mal XD, revisa bien lo \nque estas ingresando.");
 		    window.location.href="https://noha.cl";
 		    </script>';
 		}

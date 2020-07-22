@@ -125,20 +125,19 @@ body {
 	z-index:3;
 }
 #navigation a{
-
-    font-weight: 580;
-    display: block;
-    line-height: 50px;
-    padding: 5px 20px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-    font-size: 17px;
-    letter-spacing: 0.5px;
-    color: rgba(255, 170, 0);
-    background: rgb(245, 245, 245);
-    box-shadow: 4px 4px 0px 0px rgb(255, 170, 0);
-    text-shadow: 1px 1px 1px rgba(0,0, 0, 0.9);
-    text-decoration: none;
+font-weight: 580;
+display: block;
+line-height: 50px;
+padding: 5px 20px;
+text-transform: uppercase;
+margin-bottom: 16px;
+font-size: 17px;
+letter-spacing: 0.5px;
+color: rgba(255, 170, 0);
+background: rgb(245, 245, 245);
+box-shadow: 4px 4px 0px 0px rgb(255, 170, 0);
+text-shadow: 1px 1px 1px rgba(0,0, 0, 0.9);
+text-decoration: none;
 }
 #navigation a:hover{
 	background: rgba(255, 170, 0);

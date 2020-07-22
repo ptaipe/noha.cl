@@ -4,10 +4,10 @@
 	if ($_SESSION['nombre'])
 	{		
 		session_destroy();
-		header("Location: https://noha.cl/");
+		header("Location: ../index.php");
 		
 	}else{
-		header("Location: https://noha.cl/");
+		header("Location: ../index.php");
 	}
 
 ?>

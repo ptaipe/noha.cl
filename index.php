@@ -20,7 +20,6 @@
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 		<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1/dist/css/bootstrap.min.css">		
 		<script src="js/bodySlider.js"></script>
-			
 
 	</head>
 	<body background="imagenes/f1.jpg">
@@ -34,7 +33,7 @@
 				<form method="post" action="control/login.php">
 					<div class="login">
 					  <div class="login-header">
-					    <h1>login</h1>
+					    <h1>login cliente</h1>
 					  </div>
 					  <div class="login-form">
 					    <h3>usuario:</h3>
@@ -42,14 +41,54 @@
 					    <h3>clave:</h3>
 					    <input type="password" name="pass" placeholder="Clave" class="form-control"/>
 					    <br>
-					    <input type="submit" value="Iniciar" class="btn btn-light"/> 
+					    <input type="submit" value="Iniciar" class="btn btn-light" style="margin-top: 17px;
+					    font-size: 19px;
+					    width: 136px;
+					    height: 78px;
+					    background-color: white;
+					    color: black;
+					    font-weight: bold;					    
+					    box-shadow: 0px 0px 8px 4px rgba(245, 245, 245, 1);"/> 
 					  </div>
 					</div>
 				</form>
 			</div>
 			<a href="#">
 					<img id="cerrarMenu" src="imagenes/cerrar.png">
-			</a>			
+			</a>
+			<a href="#loginSocio" id="Lsocio" class="btn btn-light">iniciar como Socio</a>			
+		</div>
+		<div id="loginSocio" class="panel">
+			<div id="">
+				<form method="post" action="control/loginSocio.php">
+					<div class="login">
+					  <div class="login-header">
+					    <h1>login socio</h1>
+					  </div>
+					  <div class="login-form">
+					    <h3>usuario:</h3>
+					    <input type="text" name="usuarioSocio" placeholder="Corre empresa o personal" class="form-control"/>
+					    <h3>Rut:</h3>
+					     <input type="text" name="rutSocio" placeholder="Rut empresa o personal" class="form-control"/>
+					    <h3>clave:</h3>
+					    <input type="password" name="passSocio" placeholder="Clave" class="form-control"/>
+					   
+					    <input type="submit" value="Iniciar" class="btn btn-light" style="margin-top: 17px;
+					    font-size: 19px;
+					    width: 136px;
+					    height: 78px;
+					    background-color: white;
+					    color: black;
+					    font-weight: bold;					   
+					    box-shadow: 0px 0px 8px 4px rgba(245, 245, 245, 1);"/> 
+					  </div>
+					</div>
+				</form>
+			</div>
+			<a href="#">
+					<img id="cerrarMenu" src="imagenes/cerrar.png">
+			</a>
+			<a href="#login" id="Lsocio">iniciar como cliente</a>			
 		</div>
 		<!-- /inicio sesion -->
 
