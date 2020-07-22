@@ -34,10 +34,7 @@
 		<script src="../js/bodySlider2.js"></script>
 
 	</head>
-	<body background="../imagenes/1s.jpg">
-		<div id="precarga">
-			<!--precarga de backgrounds-->
-		</div>
+	<body background="../imagenes/sociosFondo.jpg">		
 
 			<!-- menu de navegacion -->
 		<div id="header">
@@ -48,7 +45,7 @@
 					<img id="ico" src="../imagenes/ventas.png">
 				</li>
 				<li>
-					<a id="new" href="#Mis_ofertas">configuracion</a>
+					<a id="new" href="#Mis_ofertas">Solicitudes</a>
 					<img id="ico2" src="../imagenes/conf.png" style="height: 50px;margin-left: 181px;margin-top: -72px;">
 				</li>
 				<li>
@@ -97,7 +94,7 @@
 		<!--ofertas subidas -->
 		<div id="Mis_ofertas" class="panel">
 			<div class="content">
-				<h2>Subir productos</h2>
+				<h2>Mis nuevas solicitudes de productos</h2>
 				<div>
 					
 				</div>				 			

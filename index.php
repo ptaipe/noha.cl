@@ -29,7 +29,10 @@
 
 		<!-- Inicio de sesion -->
 		<div id="login" class="panel">
-			<div id="">
+			<a href="index.php">
+					<img id="cerrar" src="imagenes/cerrar.png">
+			</a>
+			<div>
 				<form method="post" action="control/login.php">
 					<div class="login">
 					  <div class="login-header">
@@ -52,14 +55,14 @@
 					  </div>
 					</div>
 				</form>
-			</div>
-			<a href="#">
-					<img id="cerrarMenu" src="imagenes/cerrar.png">
-			</a>
+			</div>			
 			<a href="#loginSocio" id="Lsocio" class="btn btn-light">iniciar como Socio</a>			
 		</div>
 		<div id="loginSocio" class="panel">
-			<div id="">
+			<a href="index.php">
+					<img id="cerrar" src="imagenes/cerrar.png">
+			</a>
+			<div>
 				<form method="post" action="control/loginSocio.php">
 					<div class="login">
 					  <div class="login-header">
@@ -85,9 +88,7 @@
 					</div>
 				</form>
 			</div>
-			<a href="#">
-					<img id="cerrarMenu" src="imagenes/cerrar.png">
-			</a>
+			
 			<a href="#login" id="Lsocio">iniciar como cliente</a>			
 		</div>
 		<!-- /inicio sesion -->
@@ -123,7 +124,7 @@
 					<tr>
 						<td>
 							<div id="conf2">
-								<a href="#revisiónTec" >
+								<a href="#revisionTec" >
 									<img id="menu2" src="imagenes/menuRevison.jpg" >
 								</a>
 								<label id="popup1">revision tecnica</label>
@@ -157,9 +158,7 @@
 						</td>
 					</tr>
 				</table>
-				<a href="#">
-					<img id="cerrarMenu" src="imagenes/cerrar.png">
-				</a>
+				<a href="index.php" style="float: right;"><img id="cerrar" src="imagenes/cerrar.png"></a>
 			</div>
 		</div>
 		<!-- /Menu Servicios -->
@@ -195,11 +194,11 @@
 
 						<tr><td><input required class="form-control" type="text" name="direccion" placeholder="Dirección"></td></tr>
 						<tr><td><input required class="form-control" type="password" name="pass" placeholder="Clave"></td></tr>
-						<tr><td><input required type="submit" class="btn btn-primary btn-sm active" id="BtnRegistrar" value="Registrarse" style="
+						<tr><td><input required type="submit" class="btn btn-info btn-sm active" id="BtnRegistrar" value="Registrarse" style="
 							    margin-top: 17px;
 							    font-size: 19px;
 							    width: 146px;
-							    height: 88px;
+							    height: 42px;
 							    background-color: white;
 							    color: black;
 							    font-weight: 600;
@@ -208,8 +207,8 @@
 							"></td></tr>
 				  	</table>
 				  </form>
-				</div>
-				<a href="#"><img id="cerrarMenu" src="imagenes/cerrar.png"></a>
+				</div>				
+				<a href="index.php" style="float: right;"><img id="cerrar" src="imagenes/cerrar.png"></a>
 			</div>
 		</div>
 		<!--/Registro de clientes -->
@@ -280,7 +279,7 @@
 							    margin-top: 17px;
 							    font-size: 19px;
 							    width: 146px;
-							    height: 88px;
+							    height: 42px;
 							    background-color: white;
 							    color: black;
 							    font-weight: 600;
@@ -290,8 +289,8 @@
 				  		</tr>					
 				  	</table>
 				  </form>				
-			</div>
-			<a href="#"><img id="cerrarMenu" src="imagenes/cerrar.png"></a>
+			</div>			
+			<a href="index.php" style="float: right;"><img id="cerrar" src="imagenes/cerrar.png"></a>
 		</div>
 		<!-- /Registro Socio -->
 
@@ -322,28 +321,23 @@
 					</table>
 				</div>
 			</div>
-			<a href="#"><img id="cerrarMenu" src="imagenes/cerrar.png"></a>
-
+			<a href="index.php" style="float: right;"><img id="cerrar" src="imagenes/cerrar.png"></a>
 		</div>
 		<!-- /Nuestro Servicio -->
 
 		<!--Menu Revision Tecnica -->
-		<div id="revisiónTec" class="panel">
+		<div id="revisionTec" class="panel">
 			<div class="content">
-				  <form action="">
-				  	<table class="table table-borderless table-sm" id="tablePedidoRT">
-				  		<tr>
-				  			<td colspan="2">
-				  				<h2>Reserva Revision Tecnica</h2>
-				  			</td>
-				  		</tr>
+				<h2>Reserva Revision Tecnica</h2>
+				  <form action="#" method="post" id="tablePedidoRT"> 
+				  	<table class="table table-borderless table-sm" >				  		
 				  		<tr>
 				  			<td >
 				  				<div class="input-group">
 								  <div class="input-group-prepend">
 								    <span class="form-control">Rut</span>
 								  </div>
-									<input type="text" class="form-control" maxlength="8" placeholder="ejemplo: 123456789" required/>
+									<input type="text" class="form-control" maxlength="9" placeholder="ejemplo: 123456789" required/>
 								</div>
 				  			</td>
 				  			<td>
@@ -364,19 +358,14 @@
 				  			</td>
 				  			<td >
 				  				<input type="text" class="form-control" placeholder="Marca de auto" required/>
-				  			</td><img src="">
+				  			</td>
 				  		</tr>
 				  		<tr>
 				  			<td>
 				  				<input type="text" class="form-control" placeholder="Dirección" required/>
 				  			</td>
 				  			<td>
-								<div class="container">
-								    <label class="custom-file" id="customFile">
-								        <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
-								        <span class="custom-file-control form-control-file"></span>
-								    </label>
-								</div>
+								
 				  			</td>
 				  		</tr>
 				  		<tr>
@@ -397,22 +386,26 @@
 				  		</tr>
 				  		<tr>
 				  			<td colspan="2">
-				  				<center>
-				  					<a href="#" id="" class="btn btn-info btn-sm active" role="button">Guardar</a>
-				  				</center>
+				  				<center>	  					
+					  				<input required="" type="submit" class="btn btn-info btn-sm active" value="Guardar" style="
+								    margin-top: 17px;
+								    font-size: 19px;
+								    width: 146px;
+								    height: 42px;
+								    background-color: white;
+								    color: black;
+								    font-weight: 600;
+								    border: outset;
+								    box-shadow: 0px 0px 8px 4px rgba(245, 245, 245, 1);
+									">			  				
+	  			  				</center>
 				  			</td>
 				  		</tr>
 				  	</table>
-				  </form>
-
-				<a href="#tramite" id="btnvolver">
-					<img id="volverrt" src="imagenes/volver.png">
-				</a>
-
-				<a href="#" id="btnvolver">
-					<img id="cerrar" src="imagenes/cerrar.png">
-				</a>
+				  </form>				
 			</div>
+			<a href="#tramite" ><img id="volverrt" src="imagenes/volver.png"></a>
+			<a href="index.php" style="float: right;"><img id="cerrar" src="imagenes/cerrar.png"></a>
 		</div>
 		<!--/Menu Revision Tecnica -->
 
@@ -421,132 +414,143 @@
 			<div class="content">
 				<h2>Encargos o envios</h2>
 				<div id="frmDelivery">
-					<table class="table table-borderless table-sm" id="tableEnvios1">
-				  		<tbody>
-					  		<tr>
-					  			<td><p id="subtitle">Remitente</p></td>
-					  		</tr>
-					  		<tr>
-					  			<td>
-					  				<div class="input-group">
-									  <div class="input-group-prepend">
-									    <span class="form-control">Rut</span>
-									  </div>
-										<input type="text" class="form-control"  maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
-									</div>
-					  			</td>
-					  		</tr>
-					  		<tr>
-					  			<td>
-					  				<input type="text" class="form-control" placeholder="Nombre" required="">
-					  			</td>
-					  		</tr>
-					  		<tr>
-					  			<td>
-					  				<input type="text" class="form-control" placeholder="Apellido" required="">
-					  			</td>
-					  		</tr>
-					  		<tr>
-					  			<td>
-					  				<input type="text" class="form-control" placeholder="Dirección" required="">
-					  			</td>
-					  		</tr>
-					  		<tr>
-					  			<td>
-					  				<input type="text" class="form-control" placeholder="Telefóno" required="">
-					  			</td>
-					  		</tr>
-					  		<tr>
-					  			<td>
-					  				<input type="text" class="form-control" placeholder="Correo electrónico" required="">
-					  			</td>
-					  		</tr>
-					  	</tbody>
-				  </table>
-				  <table class="table table-borderless table-sm" id="tableEnvios2">
-				  		<tbody>
-				  			<tr>
-					  			<td><p id="subtitle">Destinatario</p></td>
-					  		</tr>
-					  		<tr>
-					  			<td>
-					  				<div class="input-group">
-									  <div class="input-group-prepend">
-									    <span class="form-control">Rut</span>
-									  </div>
-										<input type="text" class="form-control"maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
-									</div>
-					  			</td>
-					  		</tr>
-					  		<tr>
-					  			<td>
-					  				<input type="text" class="form-control" placeholder="Nombre" >
-					  			</td>
-					  		</tr>
-					  		<tr>
-					  			<td>
-					  				<input type="text" class="form-control" placeholder="Apellido" >
-					  			</td>
-					  		</tr>
-					  		<tr>
-					  			<td>
-					  				<input type="text" class="form-control"placeholder="Dirección" >
-					  			</td>
-					  		</tr>
-					  		<tr>
-					  			<td>
-					  				<input type="text" class="form-control" placeholder="Telefóno" >
-					  			</td>
-					  		</tr>
-					  		<tr>
-					  			<td>
-					  				<input type="text" class="form-control" placeholder="Correo electrónico">
-					  			</td>
-					  		</tr>
-					  	</tbody>
-				  </table>
-				  <table id="tableEnvios3">
-				  	<tr>
-				  		<td><label id="subtitle">¿Cuanto Pesa?</label></td>
+					<form action="#" id="tableEnvios1">
+						<table class="table table-borderless table-sm" >
+					  		<tbody>
+						  		<tr>
+						  			<td><p id="subtitle">Remitente</p></td>
+						  		</tr>
+						  		<tr>
+						  			<td>
+						  				<div class="input-group">
+										  <div class="input-group-prepend">
+										    <span class="form-control">Rut</span>
+										  </div>
+											<input type="text" class="form-control"  maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
+										</div>
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td>
+						  				<input type="text" class="form-control" placeholder="Nombre" required="">
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td>
+						  				<input type="text" class="form-control" placeholder="Apellido" required="">
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td>
+						  				<input type="text" class="form-control" placeholder="Dirección" required="">
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td>
+						  				<input type="text" class="form-control" placeholder="Telefóno" required="">
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td>
+						  				<input type="text" class="form-control" placeholder="Correo electrónico" required="">
+						  			</td>
+						  		</tr>
+						  	</tbody>
+					  </table>
+					  <table class="table table-borderless table-sm" id="tableEnvios2">
+					  		<tbody>
+					  			<tr>
+						  			<td><p id="subtitle">Destinatario</p></td>
+						  		</tr>
+						  		<tr>
+						  			<td>
+						  				<div class="input-group">
+										  <div class="input-group-prepend">
+										    <span class="form-control">Rut</span>
+										  </div>
+											<input type="text" class="form-control"maxlength="9" placeholder="ejemplo: 123456789 - sin guión" required="">
+										</div>
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td>
+						  				<input type="text" class="form-control" placeholder="Nombre" >
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td>
+						  				<input type="text" class="form-control" placeholder="Apellido" >
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td>
+						  				<input type="text" class="form-control"placeholder="Dirección" >
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td>
+						  				<input type="text" class="form-control" placeholder="Telefóno" >
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td>
+						  				<input type="text" class="form-control" placeholder="Correo electrónico">
+						  			</td>
+						  		</tr>
+						  	</tbody>
+					  </table>
+					  <table  class="table table-borderless table-sm" id="tableEnvios3">
+					  	<tr>
+					  		<td><label id="subtitle">¿Cuanto Pesa?</label></td>
 
-				  		<td><input type="text" class="form-control" placeholder="Kilogramos"></td>
+					  		<td><input type="text" class="form-control" placeholder="Kilogramos"></td>
 
-				  		<td colspan="3">
-				  			<select class="form-control">
-				  				<option>Tipo de caja</option>
-				  				<option>Caja chica</option>
-				  				<option>Caja normal</option>
-				  				<option>Caja mediana</option>
-				  				<option>Caja grande</option>
-				  			</select>
-				  		</td>
-				  	</tr>
-				  	<tr>
-				  		<td >
-				  			<label id="subtitle">¿Cuanto Mide?</label>
-				  		</td>
-				  		<td>
-				  			<input type="text" class="form-control" placeholder="Largo en cm.">
-				  		</td>
-				  		<td>
-				  			<input type="text" class="form-control" placeholder="Ancho en cm.">
-				  		</td>
-				  		<td>
-				  			<input type="text" class="form-control" placeholder="Profundidad en cm.">
-				  		</td>
-				  	</tr>
-				  </table>
-				  <center>
-	  					<a href="#" id="guardarrt" class="btn btn-primary btn-sm active" role="button">Guardar</a>
-	  			  </center>
-				</div>
-				<a href="#tramite" id="btnvolver">
+					  		<td colspan="3">
+					  			<select class="form-control">
+					  				<option>Tipo de caja</option>
+					  				<option>Caja chica</option>
+					  				<option>Caja normal</option>
+					  				<option>Caja mediana</option>
+					  				<option>Caja grande</option>
+					  			</select>
+					  		</td>
+					  	</tr>
+					  	<tr>
+					  		<td >
+					  			<label id="subtitle">¿Cuanto Mide?</label>
+					  		</td>
+					  		<td>
+					  			<input type="text" class="form-control" placeholder="Largo en cm.">
+					  		</td>
+					  		<td>
+					  			<input type="text" class="form-control" placeholder="Ancho en cm.">
+					  		</td>
+					  		<td>
+					  			<input type="text" class="form-control" placeholder="Profundidad en cm.">
+					  		</td>
+					  	</tr>
+					  </table>
+					  <center>	  					
+				  		<input required="" type="submit" class="btn btn-info btn-sm active" value="Guardar" style="
+							    margin-top: 17px;
+							    font-size: 19px;
+							    width: 146px;
+							    height: 42px;
+							    background-color: white;
+							    color: black;
+							    font-weight: 600;
+							    border: outset;
+							    box-shadow: 0px 0px 8px 4px rgba(245, 245, 245, 1);
+							">			  				
+	  			  	</center>
+					</form>
+				 
+				</div>				
+			</div>
+			<a href="#tramite" id="btnvolver">
 					<img id="volverrtEE" src="imagenes/volver.png">
 				</a>
-				<a href="#">
-						<img id="cerrarMenu" src="imagenes/cerrar.png">
-				</a>
-			</div>
+				<a href="index.php" style="float: right;"><img id="cerrar" src="imagenes/cerrar.png"></a>
 		</div>
 		<!--/Menu Envio Encomiendas -->
 
@@ -607,7 +611,7 @@
 			<a href="#tramite" id="btnvolver">
 					<img id="volverrtEE" src="imagenes/volver.png">
 			</a>
-			<a href="#">
+			<a href="index.php">
 					<img id="cerrarMenu" src="imagenes/cerrar.png">
 			</a>
 		</div>
@@ -616,16 +620,12 @@
 		<!--Menu compra regalos -->
 		<div id="comprasVarias" class="panel">
 			<div class="content">
-				<h2>Compras Regalos u otros</h2>
-			
-				
+				<h2>Compras Regalos u otros</h2>				
 			</div>
 			<a href="#tramite" id="btnvolver">
 					<img id="volverrtCR" src="imagenes/volver.png">
 				</a>
-			<a href="#">
-					<img id="cerrarMenu" src="imagenes/cerrar.png">
-			</a>
+			<a href="index.php" style="float: right;"><img id="cerrar" src="imagenes/cerrar.png"></a>
 		</div>
 		<!--/Menu compra regalos -->
 	</body>

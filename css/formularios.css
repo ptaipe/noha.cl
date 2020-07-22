@@ -1,26 +1,22 @@
 #tablePedidoRT{
-	margin-top: 87px;
 	background-color: rgba(110, 105, 109, 0.58);
-	width: 60%;
-    margin-left: 217px;
+	width: 70%;
+	padding: 50px;
+	margin: 0 auto;
+	margin-top: 51px;
 }
 #tableEnvios1{
 	background-color: rgba(110, 105, 109, 0.58);
-    margin-top: 20px;
-    width: 45%;
-    float: left;
+	margin: 0 auto;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 33px;
+	margin-bottom: 50px;
+	width: 86%;
 }
 #tableEnvios2{
-	background-color: rgba(110, 105, 109, 0.58);
-    margin-top: 20px;
-    width: 45%;
-    float: right;
 }
 #tableEnvios3{
-    background-color: rgba(110, 105, 109, 0.58);
-    margin-top: 20px;
-    width: 80%;
-    margin-left: 111px;
 }
 
 #frmDelivery{
@@ -29,18 +25,19 @@
 }
 /*Formulario Registro de clientes*/
 #clte{
-    padding-top: 32px;
+    padding-top: 18px;
     width: 70%;
     height: 522px;
     margin: 0 auto;
-    margin-top: -24px;
+    margin-top: 0px;
+    background-color: rgba(110, 105, 109, 0.58);
 }
 #newSocio{
 	padding-top: 12px;
 	width: 70%;
-	height: 522px;
-	/* background-color: rgba(110, 105, 109, 0.58); */
+	height: 472px;
 	margin: 0 auto;
+	background-color: rgba(110, 105, 109, 0.58);
 }
 #tablaClientes{
 	width: 81%;
