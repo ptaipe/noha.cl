@@ -91,9 +91,7 @@
 			
 			<a href="#login" id="Lsocio">iniciar como cliente</a>			
 		</div>
-		<!-- /inicio sesion -->
 
-			<!-- menu de navegacion -->
 		<div id="header">
 			<h1 style="padding: 0px;"><img src="imagenes/icono3.png" style="height: 130px;"></h1>
 			<ul id="navigation">
